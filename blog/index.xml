@@ -8,12 +8,21 @@
     <language>zh-tw</language>
     <lastBuildDate>Mon, 01 Feb 2021 20:07:47 +0800</lastBuildDate><atom:link href="https://fordsupr.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Java vs. Python, 來比對一下Hello world</title>
+      <title>Java vs. Python, 來比賽一下Hello world</title>
       <link>https://fordsupr.github.io/blog/helloworld/</link>
       <pubDate>Mon, 01 Feb 2021 20:07:47 +0800</pubDate>
       
       <guid>https://fordsupr.github.io/blog/helloworld/</guid>
       <description>Python    print(&#39;Hello World&#39;)   Java    public class HelloWorld{public static void main(String[] args) {System.</description>
+    </item>
+    
+    <item>
+      <title>嗯~來架設一台SAP吧!</title>
+      <link>https://fordsupr.github.io/blog/sap_erp/</link>
+      <pubDate>Mon, 01 Feb 2021 20:07:47 +0800</pubDate>
+      
+      <guid>https://fordsupr.github.io/blog/sap_erp/</guid>
+      <description>目標 : 理想情況下，希望這台SAP(VM)可以供外部logon 環境 : 本機Win 10 pro ; VM server 2008 注意事項 :  1.</description>
     </item>
     
   </channel>
