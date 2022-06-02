@@ -6,7 +6,17 @@
     <description>Recent content on Jason Li | 原來如此!So that’s why! </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 03 Feb 2021 21:06:47 +0800</lastBuildDate><atom:link href="https://fordsupr.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Jun 2022 20:10:00 +0800</lastBuildDate><atom:link href="https://fordsupr.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RPA 導入評估</title>
+      <link>https://fordsupr.github.io/blog/rpa/</link>
+      <pubDate>Wed, 01 Jun 2022 20:10:00 +0800</pubDate>
+      
+      <guid>https://fordsupr.github.io/blog/rpa/</guid>
+      <description>案例1 : 營業單位希望RPA每天整理MES與SAP待處理銷售訂單進行交期預估
+  案例2 : HR希望RPA對已簽核完畢ISO文件自動報廢</description>
+    </item>
+    
     <item>
       <title>嗯~來架設一台SAP吧!</title>
       <link>https://fordsupr.github.io/blog/sap_erp/</link>
@@ -22,7 +32,7 @@
       <pubDate>Mon, 01 Feb 2021 20:07:47 +0800</pubDate>
       
       <guid>https://fordsupr.github.io/blog/helloworld/</guid>
-      <description>Python    print(&#39;Hello World&#39;)   Java    public class HelloWorld{public static void main(String[] args) {System.</description>
+      <description>Python    print(&amp;#39;Hello World&amp;#39;)    Java    public class HelloWorld{public static void main(String[] args) {System.</description>
     </item>
     
   </channel>

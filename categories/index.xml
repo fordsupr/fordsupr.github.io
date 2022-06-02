@@ -6,7 +6,25 @@
     <description>Recent content in Categories on Jason Li | 原來如此!So that’s why! </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 03 Feb 2021 21:06:47 +0800</lastBuildDate><atom:link href="https://fordsupr.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Jun 2022 20:10:00 +0800</lastBuildDate><atom:link href="https://fordsupr.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python</title>
+      <link>https://fordsupr.github.io/categories/python/</link>
+      <pubDate>Wed, 01 Jun 2022 20:10:00 +0800</pubDate>
+      
+      <guid>https://fordsupr.github.io/categories/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RPA</title>
+      <link>https://fordsupr.github.io/categories/rpa/</link>
+      <pubDate>Wed, 01 Jun 2022 20:10:00 +0800</pubDate>
+      
+      <guid>https://fordsupr.github.io/categories/rpa/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>SAP</title>
       <link>https://fordsupr.github.io/categories/sap/</link>
@@ -17,11 +35,11 @@
     </item>
     
     <item>
-      <title>Go Language</title>
-      <link>https://fordsupr.github.io/categories/go-language/</link>
+      <title>Java</title>
+      <link>https://fordsupr.github.io/categories/java/</link>
       <pubDate>Mon, 01 Feb 2021 20:07:47 +0800</pubDate>
       
-      <guid>https://fordsupr.github.io/categories/go-language/</guid>
+      <guid>https://fordsupr.github.io/categories/java/</guid>
       <description></description>
     </item>
     
