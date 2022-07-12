@@ -143,7 +143,15 @@
 </li>
 </ul>
 </blockquote>
-<pre tabindex="0"><code>print(&#39;Hello World&#39;)
+<pre tabindex="0"><code>import uiautomation as uiauto
+...
+def changeDeptBtn():
+    time.sleep(2)
+    getScrollBar = uiauto.ScrollBarControl(Depth=18,Name=&#39;垂直&#39;)
+    print(getScrollBar)
+    getScrollBar.Click()#clcik預設居中
+    uiauto.MoveTo(getDeptButton.BoundingRectangle.right+2, getDeptButton.BoundingRectangle.top)
+    uiauto.Click(getDeptButton.BoundingRectangle.right+2, getDeptButton.BoundingRectangle.top)
 </code></pre><blockquote>
 <ul>
 <li>

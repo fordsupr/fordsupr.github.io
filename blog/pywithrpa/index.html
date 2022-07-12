@@ -5,7 +5,7 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="...原來如此...So that’s why!">
+  <meta name="description" content=" 降低RPA維護工時/Automate with Python. Reduce RPA maintenance staff hours.">
   <meta name="author" content="Jason Li">
   <meta name="generator" content="Hugo 0.99.1" />
 
@@ -113,163 +113,58 @@
 </header>
 <!-- /navigation -->
 
-
 <section class="section-sm">
   <div class="container">
     <div class="row">
-      
-      <div class="col-lg-4">
-  
-  <div class="widget">
-    
-    <h4 class="widget-title">About Me</h4>
-    
-    <img src="https://fordsupr.github.io/images/Jason.jpg" alt=""
-      class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
-    
-    <p>SAP, RPA ,Java, Python
-So that’s why!
-Java是初戀,SAP組成家庭,Python是愛好,RPA是折騰!</p>
-    <a href="https://fordsupr.github.io/about/" class="btn btn-outline-primary">Know More</a>
-    
-  </div>
-  
-  <div class="widget">
-    <h4 class="widget-title">Category</h4>
-    <ul class="list-unstyled">
-      <li><a
-          href="/categories/java">Java</a>
-      </li>
-      <li><a
-          href="/categories/python">Python</a>
-      </li>
-      <li><a
-          href="/categories/rpa">Rpa</a>
-      </li>
-      <li><a
-          href="/categories/sap">Sap</a>
-      </li>
-    </ul>
-  </div>
-  
-  <div class="widget">
-    <h4 class="widget-title">Tag</h4>
-    <ul class="list-inline">
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/java">Java</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/python">Python</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/rpa">Rpa</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/sap">Sap</a></li>
-    </ul>
-  </div>
-  
-  <div class="widget">
-    <h4 class="widget-title">Social</h4>
-    <ul class="list-inline social-links">
-      
-      <li class="list-inline-item"><a href="https://github.com/fordsupr"><i class="ti-github"></i></a></li>
-      
-    </ul>
-  </div>
-  
-  
-</div>
+      <div class="col-lg-10 mx-auto">
+        
+        <a href="/categories/rpa"
+          class="text-primary">Rpa</a>
+        
+        <a href="/categories/python"
+          class="text-primary">Python</a>
+        
+        <h2>Automate with Python</h2>
+        <div class="mb-4 post-meta">
+          <span>By Jason Li</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>10 July 2022</span>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <blockquote>
+<ul>
+<li>
+<h4 id="python">Python</h4>
+</li>
+</ul>
+</blockquote>
+<pre tabindex="0"><code>import uiautomation as uiauto
+...
+def scrollBar():
+    time.sleep(2)
+    getScrollBar = uiauto.ScrollBarControl(Depth=18,Name=&#39;垂直&#39;)
+    print(getScrollBar)
+    getScrollBar.Click()#clcik預設居中
+    uiauto.MoveTo(getDeptButton.BoundingRectangle.right+2, getDeptButton.BoundingRectangle.top)
+    uiauto.Click(getDeptButton.BoundingRectangle.right+2, getDeptButton.BoundingRectangle.top)
+...    
+</code></pre><ul>
+<li>uiautomation 其實對Python 蠻友善的</li>
+<li>ScrollBar 沒法拉? 改成Click就自然居中囉!</li>
+<li>getScrollBar.Click()其實是為了uiauto.Click(),讓這個控件出現在當下的畫面</li>
+</ul>
 
-      
-      <div class="col-lg-8 mb-5 mb-lg-0">
-        <div class="row">
-          
-          
-          <div class="col-md-6 mb-4">
-    <article class="card">
+        </div>
+
         
-        <div class="card-body px-0">
-        
-        <a href="https://fordsupr.github.io/categories/python/" class="h5 d-block my-3">Python</a>
-        <div class="mb-3 post-meta">
-            <span>By Jason Li</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>01 January 0001</span>
-            
-        </div>
-        <p class="card-text"></p>
-        <a href="https://fordsupr.github.io/categories/python/" class="btn btn-outline-primary">read more</a>
-        </div>
-    </article>
-</div>
-          
-          <div class="col-md-6 mb-4">
-    <article class="card">
-        
-        <div class="card-body px-0">
-        
-        <a href="https://fordsupr.github.io/categories/rpa/" class="h5 d-block my-3">RPA</a>
-        <div class="mb-3 post-meta">
-            <span>By Jason Li</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>01 January 0001</span>
-            
-        </div>
-        <p class="card-text"></p>
-        <a href="https://fordsupr.github.io/categories/rpa/" class="btn btn-outline-primary">read more</a>
-        </div>
-    </article>
-</div>
-          
-          <div class="col-md-6 mb-4">
-    <article class="card">
-        
-        <div class="card-body px-0">
-        
-        <a href="https://fordsupr.github.io/categories/sap/" class="h5 d-block my-3">SAP</a>
-        <div class="mb-3 post-meta">
-            <span>By Jason Li</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>01 January 0001</span>
-            
-        </div>
-        <p class="card-text"></p>
-        <a href="https://fordsupr.github.io/categories/sap/" class="btn btn-outline-primary">read more</a>
-        </div>
-    </article>
-</div>
-          
-          <div class="col-md-6 mb-4">
-    <article class="card">
-        
-        <div class="card-body px-0">
-        
-        <a href="https://fordsupr.github.io/categories/java/" class="h5 d-block my-3">Java</a>
-        <div class="mb-3 post-meta">
-            <span>By Jason Li</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>01 January 0001</span>
-            
-        </div>
-        <p class="card-text"></p>
-        <a href="https://fordsupr.github.io/categories/java/" class="btn btn-outline-primary">read more</a>
-        </div>
-    </article>
-</div>
-          
-        </div>
-      </div>
-      
-      
-      <div class="col-12 mt-5">
         
       </div>
     </div>
   </div>
 </section>
-
 
 
 
