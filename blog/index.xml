@@ -6,7 +6,16 @@
     <description>Recent content in Blogs on Jason Li | 原來如此!So that’s why! </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 10 Jul 2022 19:10:00 +0800</lastBuildDate><atom:link href="https://fordsupr.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Jul 2022 02:07:47 +0800</lastBuildDate><atom:link href="https://fordsupr.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RFC_READ_TABLE Buffer Exceeded</title>
+      <link>https://fordsupr.github.io/blog/pyrfc_over512/</link>
+      <pubDate>Fri, 29 Jul 2022 02:07:47 +0800</pubDate>
+      
+      <guid>https://fordsupr.github.io/blog/pyrfc_over512/</guid>
+      <description>via Function RFC_READ_TABLE but always getting a Data Buffer Exceeded Exception.</description>
+    </item>
+    
     <item>
       <title>Automate with Python</title>
       <link>https://fordsupr.github.io/blog/pywithrpa/</link>

@@ -5,7 +5,7 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="...原來如此...So that’s why!">
+  <meta name="description" content="Python call rfc error? Buffer Exceeded">
   <meta name="author" content="Jason Li">
   <meta name="generator" content="Hugo 0.99.1" />
 
@@ -113,165 +113,55 @@
 </header>
 <!-- /navigation -->
 
-
 <section class="section-sm">
   <div class="container">
     <div class="row">
-      
-      <div class="col-lg-4">
-  
-  <div class="widget">
-    
-    <h4 class="widget-title">About Me</h4>
-    
-    <img src="https://fordsupr.github.io/images/Jason.jpg" alt=""
-      class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
-    
-    <p>SAP, RPA ,Java, Python
-So that’s why!
-Java是初戀,SAP組成家庭,Python是愛好,RPA是折騰!</p>
-    <a href="https://fordsupr.github.io/about/" class="btn btn-outline-primary">Know More</a>
-    
-  </div>
-  
-  <div class="widget">
-    <h4 class="widget-title">Category</h4>
-    <ul class="list-unstyled">
-      <li><a
-          href="/categories/java">Java</a>
-      </li>
-      <li><a
-          href="/categories/python">Python</a>
-      </li>
-      <li><a
-          href="/categories/rpa">Rpa</a>
-      </li>
-      <li><a
-          href="/categories/sap">Sap</a>
-      </li>
-    </ul>
-  </div>
-  
-  <div class="widget">
-    <h4 class="widget-title">Tag</h4>
-    <ul class="list-inline">
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/java">Java</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/python">Python</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/rpa">Rpa</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/sap">Sap</a></li>
-    </ul>
-  </div>
-  
-  <div class="widget">
-    <h4 class="widget-title">Social</h4>
-    <ul class="list-inline social-links">
-      
-      <li class="list-inline-item"><a href="https://github.com/fordsupr"><i class="ti-github"></i></a></li>
-      
-    </ul>
-  </div>
-  
-  
-</div>
+      <div class="col-lg-10 mx-auto">
+        
+        <a href="/categories/sap"
+          class="text-primary">Sap</a>
+        
+        <a href="/categories/python"
+          class="text-primary">Python</a>
+        
+        <h2>RFC_READ_TABLE Buffer Exceeded</h2>
+        <div class="mb-4 post-meta">
+          <span>By Jason Li</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>29 July 2022</span>
+          
+        </div>
+        
+        <img src="https://fordsupr.github.io/images/post/rfc_512error.png" class="img-fluid w-90 mb-4" alt="RFC_READ_TABLE Buffer Exceeded">
+        
+        <div class="content mb-5">
+          <ul>
+<li>via Function RFC_READ_TABLE but always getting a Data Buffer Exceeded Exception.</li>
+<li>Why?
+<ul>
+<li>1.Function Module RFC_READ_TABLE also limits if read exceeds 512 bytes per row of data</li>
+</ul>
+</li>
+<li>How to fix it?
+<ul>
+<li>1.split query : getDF1,getDF2,getDF3</li>
+<li>2.merge dataframe</li>
+<li>3.insert sql&ndash;&gt; done.</li>
+</ul>
+</li>
+</ul>
+<p>附上貼圖說明,</p>
+<p><img src="/images/post/fix512error.png" alt=""></p>
 
-      
-      <div class="col-lg-8 mb-5 mb-lg-0">
-        <div class="row">
-          
-          
-          <div class="col-md-6 mb-4">
-    <article class="card">
-        
-        <img src="https://fordsupr.github.io/images/post/rfc_512error.png" class="card-img-top" alt="RFC_READ_TABLE Buffer Exceeded">
-        
-        <div class="card-body px-0">
-        
-        <a href="/categories/sap"
-            class="text-primary">Sap</a>
-        
-        <a href="/categories/python"
-            class="text-primary">Python</a>
-        
-        <a href="https://fordsupr.github.io/blog/pyrfc_over512/" class="h5 d-block my-3">RFC_READ_TABLE Buffer Exceeded</a>
-        <div class="mb-3 post-meta">
-            <span>By Jason Li</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>29 July 2022</span>
-            
         </div>
-        <p class="card-text">Python call rfc error? Buffer Exceeded</p>
-        <a href="https://fordsupr.github.io/blog/pyrfc_over512/" class="btn btn-outline-primary">read more</a>
-        </div>
-    </article>
-</div>
-          
-          <div class="col-md-6 mb-4">
-    <article class="card">
+
         
-        <img src="https://fordsupr.github.io/images/post/pyrfc_dll.png" class="card-img-top" alt="python rfc Connector">
-        
-        <div class="card-body px-0">
-        
-        <a href="/categories/sap"
-            class="text-primary">Sap</a>
-        
-        <a href="/categories/python"
-            class="text-primary">Python</a>
-        
-        <a href="https://fordsupr.github.io/blog/pyrfc/" class="h5 d-block my-3">python rfc Connector</a>
-        <div class="mb-3 post-meta">
-            <span>By Jason Li</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>27 June 2022</span>
-            
-        </div>
-        <p class="card-text">python 老是連不上SAP? Hard to connect sap ?</p>
-        <a href="https://fordsupr.github.io/blog/pyrfc/" class="btn btn-outline-primary">read more</a>
-        </div>
-    </article>
-</div>
-          
-          <div class="col-md-6 mb-4">
-    <article class="card">
-        
-        <img src="https://fordsupr.github.io/images/post/sap_erp0.png" class="card-img-top" alt="嗯~來架設一台SAP吧!">
-        
-        <div class="card-body px-0">
-        
-        <a href="/categories/sap"
-            class="text-primary">Sap</a>
-        
-        <a href="https://fordsupr.github.io/blog/sap_erp/" class="h5 d-block my-3">嗯~來架設一台SAP吧!</a>
-        <div class="mb-3 post-meta">
-            <span>By Jason Li</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>03 February 2021</span>
-            
-        </div>
-        <p class="card-text">理想情況下，希望這台SAP(VM)可以供外部logon</p>
-        <a href="https://fordsupr.github.io/blog/sap_erp/" class="btn btn-outline-primary">read more</a>
-        </div>
-    </article>
-</div>
-          
-        </div>
-      </div>
-      
-      
-      <div class="col-12 mt-5">
         
       </div>
     </div>
   </div>
 </section>
-
 
 
 
