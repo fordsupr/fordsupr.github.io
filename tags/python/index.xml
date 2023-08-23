@@ -6,7 +6,16 @@
     <description>Recent content in Python on Jason Li | 原來如此!So that’s why! </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 30 May 2023 02:07:47 +0800</lastBuildDate><atom:link href="https://fordsupr.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Aug 2023 02:07:47 +0800</lastBuildDate><atom:link href="https://fordsupr.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Build a Q&amp;A bot that can answer local files.</title>
+      <link>https://fordsupr.github.io/blog/qabot/</link>
+      <pubDate>Tue, 22 Aug 2023 02:07:47 +0800</pubDate>
+      
+      <guid>https://fordsupr.github.io/blog/qabot/</guid>
+      <description>To build a Q&amp;amp;A bot that can answer local files, you can follow these steps:</description>
+    </item>
+    
     <item>
       <title>getting Poetry [EnvCommandError] for all commands</title>
       <link>https://fordsupr.github.io/blog/poetry/</link>

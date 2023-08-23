@@ -5,7 +5,7 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="...原來如此...So that’s why!">
+  <meta name="description" content="&#39;bert-base-nli-mean-tokens&#39; with csv.">
   <meta name="author" content="Jason Li">
   <meta name="generator" content="Hugo 0.99.1" />
 
@@ -113,119 +113,66 @@
 </header>
 <!-- /navigation -->
 
-
 <section class="section-sm">
   <div class="container">
     <div class="row">
-      
-      <div class="col-lg-4">
-  
-  <div class="widget">
-    
-    <h4 class="widget-title">About Me</h4>
-    
-    <img src="https://fordsupr.github.io/images/Jason.jpg" alt=""
-      class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
-    
-    <p>SAP, RPA ,Java, Python
-So that’s why!
-Java是初戀,SAP組成家庭,Python是愛好,RPA是折騰!</p>
-    <a href="https://fordsupr.github.io/about/" class="btn btn-outline-primary">Know More</a>
-    
-  </div>
-  
-  <div class="widget">
-    <h4 class="widget-title">Category</h4>
-    <ul class="list-unstyled">
-      <li><a
-          href="/categories/java">Java</a>
-      </li>
-      <li><a
-          href="/categories/machine-learning">Machine learning</a>
-      </li>
-      <li><a
-          href="/categories/python">Python</a>
-      </li>
-      <li><a
-          href="/categories/rpa">Rpa</a>
-      </li>
-      <li><a
-          href="/categories/sap">Sap</a>
-      </li>
-    </ul>
-  </div>
-  
-  <div class="widget">
-    <h4 class="widget-title">Tag</h4>
-    <ul class="list-inline">
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/java">Java</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/machine-learning">Machine learning</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/python">Python</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/rpa">Rpa</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/sap">Sap</a></li>
-    </ul>
-  </div>
-  
-  <div class="widget">
-    <h4 class="widget-title">Social</h4>
-    <ul class="list-inline social-links">
-      
-      <li class="list-inline-item"><a href="https://github.com/fordsupr"><i class="ti-github"></i></a></li>
-      
-    </ul>
-  </div>
-  
-  
-</div>
-
-      
-      <div class="col-lg-8 mb-5 mb-lg-0">
-        <div class="row">
-          
-          
-          <div class="col-md-6 mb-4">
-    <article class="card">
+      <div class="col-lg-10 mx-auto">
         
-        <img src="https://fordsupr.github.io/images/post/helloworld.jpg" class="card-img-top" alt="Java vs. Python, 來比賽一下Hello world">
-        
-        <div class="card-body px-0">
-        
-        <a href="/categories/java"
-            class="text-primary">Java</a>
+        <a href="/categories/machine-learning"
+          class="text-primary">Machine learning</a>
         
         <a href="/categories/python"
-            class="text-primary">Python</a>
+          class="text-primary">Python</a>
         
-        <a href="https://fordsupr.github.io/blog/helloworld/" class="h5 d-block my-3">Java vs. Python, 來比賽一下Hello world</a>
-        <div class="mb-3 post-meta">
-            <span>By Jason Li</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>01 February 2021</span>
-            
-        </div>
-        <p class="card-text">這兩家語言打印HelloWorld的難易度</p>
-        <a href="https://fordsupr.github.io/blog/helloworld/" class="btn btn-outline-primary">read more</a>
-        </div>
-    </article>
-</div>
+        <h2>Build a Q&amp;A bot that can answer local files.</h2>
+        <div class="mb-4 post-meta">
+          <span>By Jason Li</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>22 August 2023</span>
           
         </div>
-      </div>
-      
-      
-      <div class="col-12 mt-5">
+        
+        <div class="content mb-5">
+          <p>To build a Q&amp;A bot that can answer local files, you can follow these steps:</p>
+<p>(1)a question-and-answer dataset
+<img src="/images/post/qa_csv.png" alt=""></p>
+<p>(2)Choose a machine learning model&ndash;&gt;bert-base-nli-mean-tokens</p>
+<pre tabindex="0"><code># 讀取數據集
+# df = pd.read_csv(&#39;chatbot_data.csv&#39;)  
+df = pd.read_csv(&#39;chatbot_data.csv&#39;, encoding=&#39;utf-8&#39;)#
+print(df.shape)
+print(df)
+
+# 獲取預訓練BERT模型來生成句向量
+model = SentenceTransformer(&#39;bert-base-nli-mean-tokens&#39;)
+</code></pre><p>(3)Training model and save model</p>
+<pre tabindex="0"><code># 對訓練集生成句子向量  
+corpus_embeddings = model.encode(df[&#39;Questions&#39;])
+# pickle保存模型
+with open(&#39;chatbot_model.pkl&#39;, &#39;wb&#39;) as f:
+  pickle.dump((model, df), f)
+</code></pre><p>(4)get the answer</p>
+<pre tabindex="0"><code>def get_answer(query):
+  # 對查詢生成向量
+  query_vec = model.encode([query])
+
+  # 計算相似度
+  sim_scores = cosine_similarity(query_vec, corpus_embeddings)
+
+  # 取最相似的下標
+  index = sim_scores.argmax()
+
+  return df[&#39;Answers&#39;].iloc[index]
+</code></pre>
+        </div>
+
+        
         
       </div>
     </div>
   </div>
 </section>
-
 
 
 

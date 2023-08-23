@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning on Jason Li | 原來如此!So that’s why! </title>
+    <link>https://fordsupr.github.io/tags/machine-learning/</link>
+    <description>Recent content in Machine Learning on Jason Li | 原來如此!So that’s why! </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Tue, 22 Aug 2023 02:07:47 +0800</lastBuildDate><atom:link href="https://fordsupr.github.io/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Build a Q&amp;A bot that can answer local files.</title>
+      <link>https://fordsupr.github.io/blog/qabot/</link>
+      <pubDate>Tue, 22 Aug 2023 02:07:47 +0800</pubDate>
+      
+      <guid>https://fordsupr.github.io/blog/qabot/</guid>
+      <description>To build a Q&amp;amp;A bot that can answer local files, you can follow these steps:</description>
+    </item>
+    
+  </channel>
+</rss>
