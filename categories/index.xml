@@ -6,7 +6,25 @@
     <description>Recent content in Categories on Jason Li | 原來如此!So that’s why! </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Mon, 11 Sep 2023 02:07:47 +0800</lastBuildDate><atom:link href="https://fordsupr.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Dec 2023 20:10:00 +0800</lastBuildDate><atom:link href="https://fordsupr.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python</title>
+      <link>https://fordsupr.github.io/categories/python/</link>
+      <pubDate>Fri, 01 Dec 2023 20:10:00 +0800</pubDate>
+      
+      <guid>https://fordsupr.github.io/categories/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RPA</title>
+      <link>https://fordsupr.github.io/categories/rpa/</link>
+      <pubDate>Fri, 01 Dec 2023 20:10:00 +0800</pubDate>
+      
+      <guid>https://fordsupr.github.io/categories/rpa/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Resume</title>
       <link>https://fordsupr.github.io/categories/resume/</link>
@@ -26,29 +44,11 @@
     </item>
     
     <item>
-      <title>Python</title>
-      <link>https://fordsupr.github.io/categories/python/</link>
-      <pubDate>Tue, 22 Aug 2023 02:07:47 +0800</pubDate>
-      
-      <guid>https://fordsupr.github.io/categories/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>SAP</title>
       <link>https://fordsupr.github.io/categories/sap/</link>
       <pubDate>Fri, 29 Jul 2022 02:07:47 +0800</pubDate>
       
       <guid>https://fordsupr.github.io/categories/sap/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>RPA</title>
-      <link>https://fordsupr.github.io/categories/rpa/</link>
-      <pubDate>Sun, 10 Jul 2022 19:10:00 +0800</pubDate>
-      
-      <guid>https://fordsupr.github.io/categories/rpa/</guid>
       <description></description>
     </item>
     
