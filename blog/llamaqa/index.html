@@ -5,7 +5,7 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="...原來如此...So that’s why!">
+  <meta name="description" content="&#39;PrivateGPT API&#39; with csv.">
   <meta name="author" content="Jason Li">
   <meta name="generator" content="Hugo 0.99.1" />
 
@@ -117,236 +117,94 @@
 </header>
 <!-- /navigation -->
 
-
 <section class="section-sm">
   <div class="container">
     <div class="row">
-      
-      <div class="col-lg-4">
-  
-  <div class="widget">
-    
-    <h4 class="widget-title">About Me</h4>
-    
-    <img src="https://fordsupr.github.io/images/Jason.jpg" alt=""
-      class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
-    
-    <p>實踐將RAG和AGI相關應用、開發落地於生產環境
-在RPA領域，熟悉 low code 軟體和 Python。
-在智慧製造領域，配合清大產學合作導入規格推薦系統，使用 XGBoost 和 Random Forest 等機器學習模型。</p>
-    <a href="https://fordsupr.github.io/about/" class="btn btn-outline-primary">Know More</a>
-    
-  </div>
-  
-  <div class="widget">
-    <h4 class="widget-title">Category</h4>
-    <ul class="list-unstyled">
-      <li><a
-          href="/categories/a.i.rag-agi">A.I.Rag agi</a>
-      </li>
-      <li><a
-          href="/categories/java">Java</a>
-      </li>
-      <li><a
-          href="/categories/machine-learning">Machine learning</a>
-      </li>
-      <li><a
-          href="/categories/python">Python</a>
-      </li>
-      <li><a
-          href="/categories/resume">Resume</a>
-      </li>
-      <li><a
-          href="/categories/rpa">Rpa</a>
-      </li>
-      <li><a
-          href="/categories/sap">Sap</a>
-      </li>
-    </ul>
-  </div>
-  
-  <div class="widget">
-    <h4 class="widget-title">Tag</h4>
-    <ul class="list-inline">
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/java">Java</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/machine-learning">Machine learning</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/python">Python</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/resume">Resume</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/rpa">Rpa</a></li>
-      <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-          href="/tags/sap">Sap</a></li>
-    </ul>
-  </div>
-  
-  <div class="widget">
-    <h4 class="widget-title">Social</h4>
-    <ul class="list-inline social-links">
-      
-      <li class="list-inline-item"><a href="https://github.com/fordsupr"><i class="ti-github"></i></a></li>
-      
-      <li class="list-inline-item"><a href="https://www.linkedin.com/in/jason-li-i3bigdata"><i class="ti-linkedin"></i></a></li>
-      
-    </ul>
-  </div>
-  
-  
-</div>
+      <div class="col-lg-10 mx-auto">
+        
+        <a href="/categories/a.i.rag-agi"
+          class="text-primary">A. i. rag agi</a>
+        
+        <a href="/categories/python"
+          class="text-primary">Python</a>
+        
+        <h2>Build a LLM RAG that can answer local files.</h2>
+        <div class="mb-4 post-meta">
+          <span>By Jason Li</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>11 March 2024</span>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <p>公司希望對A.I.除了智慧製造專案外，能有其他方面的應用或是題目。
+當然一開始是滿頭問號??節省人力，不是已經有RPA?
+智慧製造也在嘗試&quot;瑕疵檢測&quot;方面的嘗試，怎麼生出其他A.I.題目?</p>
+<p>基於2023.8我有篇文章&quot;Build a Q&amp;A bot that can answer local files.&quot;</p>
+<ul>
+<li>不足的地方:
+<ul>
+<li>有Model，但沒有使用LLM</li>
+<li>難以衍伸其他應用</li>
+<li>沒有API</li>
+</ul>
+</li>
+</ul>
+<p>想想2023應該算是GPT滿天噴發的一年吧，上市公司怎麼可以沒沾個邊呢?
+2023.Q4開始LLM冒險吧!</p>
+<ul>
+<li>專案應該要些範圍:
+<ul>
+<li>開源LLM:所以不能使用chatgpt/openai</li>
+<li>離網使用:公司文件不能外流</li>
+<li>盡量API化</li>
+<li>使用GPU,llama.cpp算力還是不夠</li>
+</ul>
+</li>
+</ul>
+<p>(1)先看看LLM的執行效果
+<img src="/images/post/llama_query.png" alt=""></p>
+<p>(2)原始csv長相這樣,
+<img src="/images/post/llama_csv.png" alt=""></p>
+<p>(3)code:除非你跟我一樣使用PrivateGPT API,否則請不要照抄</p>
+<pre tabindex="0"><code>from pgpt_python.client import PrivateGPTApi
 
-      
-      <div class="col-lg-8 mb-5 mb-lg-0">
-        <div class="row">
-          
-          
-          <div class="col-md-6 mb-4">
-    <article class="card">
-        
-        <div class="card-body px-0">
-        
-        <a href="https://fordsupr.github.io/categories/a.i.rag-agi/" class="h5 d-block my-3">A.I.RAG AGI</a>
-        <div class="mb-3 post-meta">
-            <span>By Jason Li</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>01 January 0001</span>
-            
+client = PrivateGPTApi(base_url=&#34;http://192.168.11.63:8001&#34;)
+
+# Health
+print(client.health.health())
+# Chunks
+print(&#34;\n&gt;Find related chunks:&#34;)
+# print(client.context_chunks.chunks_retrieval(text=&#34;台積電股價&#34;).data[0].text)
+print(&#34;\n&gt;Contextual completion:&#34;)
+result = client.contextual_completions.prompt_completion(
+    prompt=&#34;請問如何申請資料夾權限?請以中文回答&#34;,#台積電股價?請以中文回答
+    use_context=True,
+    # context_filter={&#34;docs_ids&#34;: [ingested_text_doc_id]},
+    include_sources=True,
+).choices[0]
+print(result.message.content)
+# print(f&#34; # Source: {result.sources[0].document.doc_metadata[&#39;file_name&#39;]}&#34;)
+</code></pre><ul>
+<li>請避免採坑:
+<ul>
+<li>請務必確認使用CUDA，雖然很多LLM號稱CPU就夠，但實際上CPU算力是不夠的。</li>
+<li>LLM需支援API，否則我很難想像怎麼產品化?</li>
+<li>LLM的安全，沒做到?等者被爆</li>
+</ul>
+</li>
+</ul>
+<p>謝謝大家的閱讀!</p>
+
         </div>
-        <p class="card-text"></p>
-        <a href="https://fordsupr.github.io/categories/a.i.rag-agi/" class="btn btn-outline-primary">read more</a>
-        </div>
-    </article>
-</div>
-          
-          <div class="col-md-6 mb-4">
-    <article class="card">
+
         
-        <div class="card-body px-0">
         
-        <a href="https://fordsupr.github.io/categories/python/" class="h5 d-block my-3">Python</a>
-        <div class="mb-3 post-meta">
-            <span>By Jason Li</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>01 January 0001</span>
-            
-        </div>
-        <p class="card-text"></p>
-        <a href="https://fordsupr.github.io/categories/python/" class="btn btn-outline-primary">read more</a>
-        </div>
-    </article>
-</div>
-          
-          <div class="col-md-6 mb-4">
-    <article class="card">
-        
-        <div class="card-body px-0">
-        
-        <a href="https://fordsupr.github.io/categories/rpa/" class="h5 d-block my-3">RPA</a>
-        <div class="mb-3 post-meta">
-            <span>By Jason Li</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>01 January 0001</span>
-            
-        </div>
-        <p class="card-text"></p>
-        <a href="https://fordsupr.github.io/categories/rpa/" class="btn btn-outline-primary">read more</a>
-        </div>
-    </article>
-</div>
-          
-          <div class="col-md-6 mb-4">
-    <article class="card">
-        
-        <div class="card-body px-0">
-        
-        <a href="https://fordsupr.github.io/categories/resume/" class="h5 d-block my-3">Resume</a>
-        <div class="mb-3 post-meta">
-            <span>By Jason Li</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>01 January 0001</span>
-            
-        </div>
-        <p class="card-text"></p>
-        <a href="https://fordsupr.github.io/categories/resume/" class="btn btn-outline-primary">read more</a>
-        </div>
-    </article>
-</div>
-          
-          <div class="col-md-6 mb-4">
-    <article class="card">
-        
-        <div class="card-body px-0">
-        
-        <a href="https://fordsupr.github.io/categories/machine-learning/" class="h5 d-block my-3">Machine Learning</a>
-        <div class="mb-3 post-meta">
-            <span>By Jason Li</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>01 January 0001</span>
-            
-        </div>
-        <p class="card-text"></p>
-        <a href="https://fordsupr.github.io/categories/machine-learning/" class="btn btn-outline-primary">read more</a>
-        </div>
-    </article>
-</div>
-          
-          <div class="col-md-6 mb-4">
-    <article class="card">
-        
-        <div class="card-body px-0">
-        
-        <a href="https://fordsupr.github.io/categories/sap/" class="h5 d-block my-3">SAP</a>
-        <div class="mb-3 post-meta">
-            <span>By Jason Li</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>01 January 0001</span>
-            
-        </div>
-        <p class="card-text"></p>
-        <a href="https://fordsupr.github.io/categories/sap/" class="btn btn-outline-primary">read more</a>
-        </div>
-    </article>
-</div>
-          
-        </div>
-      </div>
-      
-      
-      <div class="col-12 mt-5">
-        
-    <ul class="pagination pagination-default">
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
-      </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item active">
-        <a aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
-      </li>
-      <li class="page-item">
-        <a href="/categories/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
-      </li>
-      <li class="page-item">
-        <a href="/categories/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/categories/page/2/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
-      </li>
-    </ul>
       </div>
     </div>
   </div>
 </section>
-
 
 
 
