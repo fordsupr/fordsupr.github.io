@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on Jason Li | 原來如此!So that’s why! </title>
+    <link>http://localhost:1313/tags/java/</link>
+    <description>Recent content in Java on Jason Li | 原來如此!So that’s why! </description>
+    <generator>Hugo</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Mon, 01 Feb 2021 20:07:47 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java vs. Python, 來比賽一下Hello world</title>
+      <link>http://localhost:1313/blog/helloworld/</link>
+      <pubDate>Mon, 01 Feb 2021 20:07:47 +0800</pubDate>
+      <guid>http://localhost:1313/blog/helloworld/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;h4 id=&#34;python&#34;&gt;Python&lt;/h4&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import uiautomation as uiauto&#xD;&#xA;...&#xD;&#xA;def changeDeptBtn():&#xD;&#xA;    time.sleep(2)&#xD;&#xA;    getScrollBar = uiauto.ScrollBarControl(Depth=18,Name=&amp;#39;垂直&amp;#39;)&#xD;&#xA;    print(getScrollBar)&#xD;&#xA;    getScrollBar.Click()#clcik預設居中&#xD;&#xA;    uiauto.MoveTo(getDeptButton.BoundingRectangle.right+2, getDeptButton.BoundingRectangle.top)&#xD;&#xA;    uiauto.Click(getDeptButton.BoundingRectangle.right+2, getDeptButton.BoundingRectangle.top)&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;h4 id=&#34;java&#34;&gt;Java&lt;/h4&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class HelloWorld{&#xD;&#xA;    public static void main(String[] args) {&#xD;&#xA;        System.out.println(&amp;#34;Hello World&amp;#34;);&#xD;&#xA;    }&#xD;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;我自己是從Java入門,被荼毒好多年後反過來看Python或是其他語言&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

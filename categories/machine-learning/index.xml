@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning on Jason Li | 原來如此!So that’s why! </title>
+    <link>http://localhost:1313/categories/machine-learning/</link>
+    <description>Recent content in Machine Learning on Jason Li | 原來如此!So that’s why! </description>
+    <generator>Hugo</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Tue, 22 Aug 2023 02:07:47 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Build a Q&amp;A bot that can answer local files.</title>
+      <link>http://localhost:1313/blog/qabot/</link>
+      <pubDate>Tue, 22 Aug 2023 02:07:47 +0800</pubDate>
+      <guid>http://localhost:1313/blog/qabot/</guid>
+      <description>&lt;p&gt;To build a Q&amp;amp;A bot that can answer local files, you can follow these steps:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
