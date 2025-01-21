@@ -2,94 +2,94 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on Jason Li | 原來如此!So that’s why! </title>
-    <link>http://localhost:1313/blog/</link>
+    <link>https://fordsupr.github.io/blog/</link>
     <description>Recent content in Blogs on Jason Li | 原來如此!So that’s why! </description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 31 Dec 2024 20:10:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Jan 2025 12:10:00 +0800</lastBuildDate>
+    <atom:link href="https://fordsupr.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用UiPath &#43; Python &#43; OCR 進行RPA自動化</title>
-      <link>http://localhost:1313/blog/rpa2024q4/</link>
-      <pubDate>Tue, 31 Dec 2024 20:10:00 +0800</pubDate>
-      <guid>http://localhost:1313/blog/rpa2024q4/</guid>
-      <description>&lt;h1 id=&#34;專案結構&#34;&gt;專案結構&lt;/h1&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Web&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;RPA\UiPath&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Python+OCR&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;ocr-辨識率低下的優化案&#34;&gt;OCR 辨識率低下的優化案&lt;/h1&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;引用Git開源專案：&lt;strong&gt;cnocr,tesseract,easyocr..&lt;/strong&gt;（準確度不高，已經放棄）&lt;/li&gt;&#xA;&lt;li&gt;採用 &lt;strong&gt;PaddleOCR&lt;/strong&gt; 重新開發客製化OCR引擎（&lt;strong&gt;完成&lt;/strong&gt;）&lt;/li&gt;&#xA;&lt;li&gt;改寫成API方便調用，使用 &lt;strong&gt;Unit Test&lt;/strong&gt; 測試準確度（&lt;strong&gt;完成&lt;/strong&gt;）&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;目前進度&#34;&gt;目前進度&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;中英數準確度：&lt;strong&gt;97%&lt;/strong&gt;, Big5差點意思。&lt;/li&gt;&#xA;&lt;li&gt;單純英數準確度：&lt;strong&gt;99%&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;足夠支援 RPA 生產環境（PRD）運行&lt;/li&gt;&#xA;&lt;li&gt;今天產線人員希望我試試看能不能OCR這張照片,&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/post/DBU_OCR%E8%BE%A8%E8%AD%98mark.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+      <link>https://fordsupr.github.io/blog/rpa2024q4/</link>
+      <pubDate>Tue, 21 Jan 2025 12:10:00 +0800</pubDate>
+      <guid>https://fordsupr.github.io/blog/rpa2024q4/</guid>
+      <description>&lt;h1 id=&#34;專案結構&#34;&gt;專案結構&lt;/h1&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Web&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;RPA\UiPath&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Python+OCR&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;ocr-辨識率低下的優化案&#34;&gt;OCR 辨識率低下的優化案&lt;/h1&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;引用Git開源專案：&lt;strong&gt;cnocr,tesseract,easyocr..&lt;/strong&gt;（準確度不高，已經放棄）&lt;/li&gt;&#xA;&lt;li&gt;採用 &lt;strong&gt;PaddleOCR&lt;/strong&gt; 重新開發客製化OCR引擎（&lt;strong&gt;完成&lt;/strong&gt;）&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;PaddleOCR&lt;/strong&gt;改寫成API方便調用，使用 &lt;strong&gt;Unit Test&lt;/strong&gt; 測試準確度（&lt;strong&gt;完成&lt;/strong&gt;）&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;目前進度&#34;&gt;目前進度&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;中英數準確度：&lt;strong&gt;97%&lt;/strong&gt;, Big5繁體差點意思。&lt;/li&gt;&#xA;&lt;li&gt;單純英數準確度：&lt;strong&gt;99%&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;評估足夠支援 RPA 生產環境（PRD）運行&lt;/li&gt;&#xA;&lt;li&gt;剛好今天產線人員希望我試試看能不能OCR這張照片,&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://fordsupr.github.io/images/post/DBU_OCR%E8%BE%A8%E8%AD%98mark.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Build a LLM RAG that can answer local files.</title>
-      <link>http://localhost:1313/blog/llamaqa/</link>
+      <link>https://fordsupr.github.io/blog/llamaqa/</link>
       <pubDate>Mon, 11 Mar 2024 02:07:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/llamaqa/</guid>
+      <guid>https://fordsupr.github.io/blog/llamaqa/</guid>
       <description>&lt;p&gt;公司希望對A.I.除了智慧製造專案外，能有其他方面的應用或是題目。&#xA;當然一開始是滿頭問號??節省人力，不是已經有RPA?&#xA;智慧製造也在嘗試&amp;quot;瑕疵檢測&amp;quot;方面的嘗試，怎麼生出其他A.I.題目?&lt;/p&gt;&#xA;&lt;p&gt;基於2023.8我有篇文章&amp;quot;Build a Q&amp;amp;A bot that can answer local files.&amp;quot;&lt;/p&gt;</description>
     </item>
     <item>
       <title>RPA效益分析2021~2023</title>
-      <link>http://localhost:1313/blog/rpa2023/</link>
+      <link>https://fordsupr.github.io/blog/rpa2023/</link>
       <pubDate>Fri, 01 Dec 2023 20:10:00 +0800</pubDate>
-      <guid>http://localhost:1313/blog/rpa2023/</guid>
+      <guid>https://fordsupr.github.io/blog/rpa2023/</guid>
       <description>&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;2021~2023 RPA開發:我的專案大部分都是跟&#xA;SAP、MES有相關的整合。&#xA;前陣子高層希望整理相關清單可以方便檢視相關效益。&#xA;(下圖資料都是來自於User專案簡報)&lt;/p&gt;&#xA;&lt;p&gt;整理如下說明,&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;RPA項目&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;時　　　程&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: center&#34;&gt;前/後效益分析&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;MES交期預估&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;2021/12～2022/4&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;節省 11小時 / 每人*月&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;ISO文管系統RPA專案(自動刪除)&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;2022/2～2022/12&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;節省 6小時 / 每人*月&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;A廠MES生產排程RPA導入&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;2022/8～2022/12&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;節省 125分鐘 / 日&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;B廠MES生產排程RPA導入&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;2023/5～2023/7&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: center&#34;&gt;節省 125分鐘 / 日&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;RPA不是替代人力而是節省工時，ex: 我們不妨從最無聊的地方開始。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Resume / About me</title>
-      <link>http://localhost:1313/blog/resume/</link>
+      <link>https://fordsupr.github.io/blog/resume/</link>
       <pubDate>Mon, 11 Sep 2023 02:07:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/resume/</guid>
+      <guid>https://fordsupr.github.io/blog/resume/</guid>
       <description>&lt;h2 id=&#34;career-objective&#34;&gt;Career objective&lt;/h2&gt;&#xA;&lt;p&gt;Clear logic, empathy ability, simplify complex process.&#xA;Work attitude is correct, responsible, able to stand in the position of the team and the company, and make the best contribution!&#xA;Freelancer job nature is also available.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Build a Q&amp;A bot that can answer local files.</title>
-      <link>http://localhost:1313/blog/qabot/</link>
+      <link>https://fordsupr.github.io/blog/qabot/</link>
       <pubDate>Tue, 22 Aug 2023 02:07:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/qabot/</guid>
+      <guid>https://fordsupr.github.io/blog/qabot/</guid>
       <description>&lt;p&gt;To build a Q&amp;amp;A bot that can answer local files, you can follow these steps:&lt;/p&gt;</description>
     </item>
     <item>
       <title>getting Poetry [EnvCommandError] for all commands</title>
-      <link>http://localhost:1313/blog/poetry/</link>
+      <link>https://fordsupr.github.io/blog/poetry/</link>
       <pubDate>Tue, 30 May 2023 02:07:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/poetry/</guid>
+      <guid>https://fordsupr.github.io/blog/poetry/</guid>
       <description>&lt;ul&gt;&#xA;&lt;li&gt;I&amp;rsquo;ve been trying to find a way to get poetry to work in my environment,&#xA;but I have been encountering more and more issues.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;poetry shell error&lt;/p&gt;</description>
     </item>
     <item>
       <title>RFC_READ_TABLE Buffer Exceeded</title>
-      <link>http://localhost:1313/blog/pyrfc_over512/</link>
+      <link>https://fordsupr.github.io/blog/pyrfc_over512/</link>
       <pubDate>Fri, 29 Jul 2022 02:07:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/pyrfc_over512/</guid>
+      <guid>https://fordsupr.github.io/blog/pyrfc_over512/</guid>
       <description>&lt;ul&gt;&#xA;&lt;li&gt;via Function RFC_READ_TABLE but always getting a Data Buffer Exceeded Exception.&lt;/li&gt;&#xA;&lt;li&gt;Why?&#xA;&lt;ul&gt;&#xA;&lt;li&gt;1.Function Module RFC_READ_TABLE also limits if read exceeds 512 bytes per row of data&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;How to fix it?&#xA;&lt;ul&gt;&#xA;&lt;li&gt;1.split query : getDF1,getDF2,getDF3&lt;/li&gt;&#xA;&lt;li&gt;2.merge dataframe&lt;/li&gt;&#xA;&lt;li&gt;3.insert sql&amp;ndash;&amp;gt; done.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;附上貼圖說明,&lt;/p&gt;</description>
     </item>
     <item>
       <title>Automate with Python</title>
-      <link>http://localhost:1313/blog/pywithrpa/</link>
+      <link>https://fordsupr.github.io/blog/pywithrpa/</link>
       <pubDate>Sun, 10 Jul 2022 19:10:00 +0800</pubDate>
-      <guid>http://localhost:1313/blog/pywithrpa/</guid>
+      <guid>https://fordsupr.github.io/blog/pywithrpa/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;h4 id=&#34;python&#34;&gt;Python&lt;/h4&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import uiautomation as uiauto&#xD;&#xA;...&#xD;&#xA;def scrollBar():&#xD;&#xA;    time.sleep(2)&#xD;&#xA;    getScrollBar = uiauto.ScrollBarControl(Depth=18,Name=&amp;#39;垂直&amp;#39;)&#xD;&#xA;    print(getScrollBar)&#xD;&#xA;    getScrollBar.Click()#clcik預設居中&#xD;&#xA;    uiauto.MoveTo(getDeptButton.BoundingRectangle.right+2, getDeptButton.BoundingRectangle.top)&#xD;&#xA;    uiauto.Click(getDeptButton.BoundingRectangle.right+2, getDeptButton.BoundingRectangle.top)&#xD;&#xA;...    &#xA;&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;&#xA;&lt;li&gt;uiautomation 其實對Python 蠻友善的&lt;/li&gt;&#xA;&lt;li&gt;ScrollBar 沒法拉? 改成Click就自然居中囉!&lt;/li&gt;&#xA;&lt;li&gt;getScrollBar.Click()其實是為了uiauto.Click(),讓這個控件出現在當下的畫面&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>python rfc Connector</title>
-      <link>http://localhost:1313/blog/pyrfc/</link>
+      <link>https://fordsupr.github.io/blog/pyrfc/</link>
       <pubDate>Mon, 27 Jun 2022 02:06:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/pyrfc/</guid>
+      <guid>https://fordsupr.github.io/blog/pyrfc/</guid>
       <description>&lt;ul&gt;&#xA;&lt;li&gt;RFC SDK : ref &amp;ndash;&amp;gt;https://sap.github.io/PyRFC/index.html&lt;/li&gt;&#xA;&lt;li&gt;pyrfc  : 請安裝 &amp;ndash;&amp;gt;pip install pyrfc&lt;/li&gt;&#xA;&lt;li&gt;注意事項 :&#xA;&lt;ul&gt;&#xA;&lt;li&gt;1.python 建議使用 3.8+&lt;/li&gt;&#xA;&lt;li&gt;2.pyrfc = 2.5 , 對應 rfc SDK =  NW RFC Library: SDK variant, Release 750 Patch Level 9, Compiled on Dec 11 2021 01:53:21&lt;/li&gt;&#xA;&lt;li&gt;3.At last : copy sapnwrfc.dll to System32&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;附上貼圖說明,&lt;/p&gt;</description>
     </item>
     <item>
       <title>RPA 導入評估</title>
-      <link>http://localhost:1313/blog/rpa/</link>
+      <link>https://fordsupr.github.io/blog/rpa/</link>
       <pubDate>Wed, 01 Jun 2022 20:10:00 +0800</pubDate>
-      <guid>http://localhost:1313/blog/rpa/</guid>
+      <guid>https://fordsupr.github.io/blog/rpa/</guid>
       <description>&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;案例1 : 營業單位希望RPA每天整理MES與SAP待處理銷售訂單進行交期預估&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;案例2 : HR希望RPA對已簽核完畢ISO文件自動報廢&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;注意事項 :&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;(1)案例1已上線&lt;/li&gt;&#xA;&lt;li&gt;(2)案例2開發中(2022.6)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;良心建議:&lt;/p&gt;</description>
     </item>
     <item>
       <title>嗯~來架設一台SAP吧!</title>
-      <link>http://localhost:1313/blog/sap_erp/</link>
+      <link>https://fordsupr.github.io/blog/sap_erp/</link>
       <pubDate>Wed, 03 Feb 2021 21:06:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/sap_erp/</guid>
+      <guid>https://fordsupr.github.io/blog/sap_erp/</guid>
       <description>&lt;ul&gt;&#xA;&lt;li&gt;目標 : 理想情況下，希望這台SAP(VM)可以供外部logon&lt;/li&gt;&#xA;&lt;li&gt;環境 : 本機Win 10 pro ; VM server 2008&lt;/li&gt;&#xA;&lt;li&gt;注意事項 :&#xA;&lt;ul&gt;&#xA;&lt;li&gt;1.使用NAT,VM8net網卡&lt;/li&gt;&#xA;&lt;li&gt;2.確認 Lan IP&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;我盡量附上貼圖說明,&lt;/p&gt;</description>
     </item>
     <item>
       <title>Java vs. Python, 來比賽一下Hello world</title>
-      <link>http://localhost:1313/blog/helloworld/</link>
+      <link>https://fordsupr.github.io/blog/helloworld/</link>
       <pubDate>Mon, 01 Feb 2021 20:07:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/helloworld/</guid>
+      <guid>https://fordsupr.github.io/blog/helloworld/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;h4 id=&#34;python&#34;&gt;Python&lt;/h4&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;import uiautomation as uiauto&#xD;&#xA;...&#xD;&#xA;def changeDeptBtn():&#xD;&#xA;    time.sleep(2)&#xD;&#xA;    getScrollBar = uiauto.ScrollBarControl(Depth=18,Name=&amp;#39;垂直&amp;#39;)&#xD;&#xA;    print(getScrollBar)&#xD;&#xA;    getScrollBar.Click()#clcik預設居中&#xD;&#xA;    uiauto.MoveTo(getDeptButton.BoundingRectangle.right+2, getDeptButton.BoundingRectangle.top)&#xD;&#xA;    uiauto.Click(getDeptButton.BoundingRectangle.right+2, getDeptButton.BoundingRectangle.top)&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;h4 id=&#34;java&#34;&gt;Java&lt;/h4&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;public class HelloWorld{&#xD;&#xA;    public static void main(String[] args) {&#xD;&#xA;        System.out.println(&amp;#34;Hello World&amp;#34;);&#xD;&#xA;    }&#xD;&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;我自己是從Java入門,被荼毒好多年後反過來看Python或是其他語言&lt;/p&gt;</description>
     </item>
   </channel>
