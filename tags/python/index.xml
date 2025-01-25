@@ -6,8 +6,15 @@
     <description>Recent content in Python on Jason Li | 原來如此!So that’s why! </description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 21 Jan 2025 12:10:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jan 2025 12:10:00 +0800</lastBuildDate>
     <atom:link href="https://fordsupr.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>對於AI Agent RPA 工作流程的優化想法</title>
+      <link>https://fordsupr.github.io/blog/aiagent202501/</link>
+      <pubDate>Sat, 25 Jan 2025 12:10:00 +0800</pubDate>
+      <guid>https://fordsupr.github.io/blog/aiagent202501/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;通過合理的任務拆分和流程設計，AI能夠更好地服務於復雜的業務場景。&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;單個LLM的局限性&lt;/strong&gt;&lt;br&gt;&#xA;單一的語言模型（LLM）能力有限，難以處理復雜的任務。這是因為復雜的任務通常涉及多個相互關聯的子任務和決策點，超出了單一模型的處理範圍。&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;工作流的作用&lt;/strong&gt;&lt;br&gt;&#xA;為了克服這一挑戰，我們可以利用工作流將復雜的問題分解為一系列較小且可管理的子任務。每個子任務由專門的AI組件或規則負責處理。這種模塊化的方法不僅能讓問題解決更加系統化，還能確保每個環節得到最佳的處理。我們可以通過引用下圖來理解這一過程：&#xA;&lt;img src=&#34;https://fordsupr.github.io/images/post/rabbit.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;工作流的兩大關鍵作用&lt;/strong&gt;&lt;br&gt;&#xA;工作流有兩個主要作用：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;提升質量&lt;/li&gt;&#xA;&lt;li&gt;解決更復雜的問題&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;這些功能是當前普通LLM Agent無法實現的。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>使用UiPath &#43; Python &#43; OCR 進行RPA自動化</title>
       <link>https://fordsupr.github.io/blog/rpa2024q4/</link>

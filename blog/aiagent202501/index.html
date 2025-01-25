@@ -122,65 +122,65 @@
     <div class="row">
       <div class="col-lg-10 mx-auto">
         
+        <a href="/categories/ai-agent"
+          class="text-primary">Ai agent</a>
+        
         <a href="/categories/rpa"
           class="text-primary">Rpa</a>
         
         <a href="/categories/python"
           class="text-primary">Python</a>
         
-        <h2>RPA效益分析2021~2023</h2>
+        <h2>對於AI Agent RPA 工作流程的優化想法</h2>
         <div class="mb-4 post-meta">
           <span>By Jason Li</span>
           
           <span class="border-bottom border-primary px-2 mx-1"></span>
-          <span>01 December 2023</span>
+          <span>25 January 2025</span>
           
         </div>
         
         <div class="content mb-5">
-          <ul>
+          <p><strong>通過合理的任務拆分和流程設計，AI能夠更好地服務於復雜的業務場景。</strong></p>
+<ol>
 <li>
-<p>2021~2023 RPA開發:我的專案大部分都是跟
-SAP、MES有相關的整合。
-前陣子高層希望整理相關清單可以方便檢視相關效益。
-(下圖資料都是來自於User專案簡報)</p>
-<p>整理如下說明,</p>
-<table>
-  <thead>
-      <tr>
-          <th style="text-align: center">RPA項目</th>
-          <th style="text-align: center">時　　　程</th>
-          <th style="text-align: center">前/後效益分析</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: center">MES交期預估</td>
-          <td style="text-align: center">2021/12～2022/4</td>
-          <td style="text-align: center">節省 11小時 / 每人*月</td>
-      </tr>
-      <tr>
-          <td style="text-align: center">ISO文管系統RPA專案(自動刪除)</td>
-          <td style="text-align: center">2022/2～2022/12</td>
-          <td style="text-align: center">節省 6小時 / 每人*月</td>
-      </tr>
-      <tr>
-          <td style="text-align: center">A廠MES生產排程RPA導入</td>
-          <td style="text-align: center">2022/8～2022/12</td>
-          <td style="text-align: center">節省 125分鐘 / 日</td>
-      </tr>
-      <tr>
-          <td style="text-align: center">B廠MES生產排程RPA導入</td>
-          <td style="text-align: center">2023/5～2023/7</td>
-          <td style="text-align: center">節省 125分鐘 / 日</td>
-      </tr>
-  </tbody>
-</table>
+<p><strong>單個LLM的局限性</strong><br>
+單一的語言模型（LLM）能力有限，難以處理復雜的任務。這是因為復雜的任務通常涉及多個相互關聯的子任務和決策點，超出了單一模型的處理範圍。</p>
 </li>
 <li>
-<p>RPA不是替代人力而是節省工時，ex: 我們不妨從最無聊的地方開始。</p>
+<p><strong>工作流的作用</strong><br>
+為了克服這一挑戰，我們可以利用工作流將復雜的問題分解為一系列較小且可管理的子任務。每個子任務由專門的AI組件或規則負責處理。這種模塊化的方法不僅能讓問題解決更加系統化，還能確保每個環節得到最佳的處理。我們可以通過引用下圖來理解這一過程：
+<img src="/images/post/rabbit.gif" alt=""></p>
 </li>
+<li>
+<p><strong>工作流的兩大關鍵作用</strong><br>
+工作流有兩個主要作用：</p>
+<ul>
+<li>提升質量</li>
+<li>解決更復雜的問題</li>
 </ul>
+<p>這些功能是當前普通LLM Agent無法實現的。</p>
+</li>
+<li>
+<p><strong>設計工作流的下一步</strong><br>
+接下來，我們將探討如何設計有效的工作流來充分發揮AI Agent的潛力。</p>
+<ul>
+<li>前一篇文章我們有提過透過引入大模型OCR技術，<strong>99%&ndash;&gt;100%來解決人力介入、確認</strong>的問題。
+<img src="/images/post/1%25.png" alt=""></li>
+<li>根據以上的思路，所以下圖紅框的部分，我們可以開始設計混合型的AI Agent來替代原本的功能。
+<img src="/images/post/checkOff.png" alt=""></li>
+</ul>
+</li>
+<li>
+<p><strong>結語</strong></p>
+</li>
+</ol>
+<ul>
+<li>這套系統將於2025年2月開始公司內部教育訓練，預計將在2025年3月初完成上線。</li>
+<li>甚麼時候改版，要視資源，後續規劃而定。</li>
+</ul>
+<hr>
+<p><strong>謝謝閱讀！</strong></p>
 <!-- 我盡量附上貼圖說明,
 
 ![](/images/post/sap_erp1.png)

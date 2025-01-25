@@ -6,19 +6,26 @@
     <description>Recent content in Categories on Jason Li | 原來如此!So that’s why! </description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 21 Jan 2025 12:10:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jan 2025 12:10:00 +0800</lastBuildDate>
     <atom:link href="https://fordsupr.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Agent</title>
+      <link>https://fordsupr.github.io/categories/ai-agent/</link>
+      <pubDate>Sat, 25 Jan 2025 12:10:00 +0800</pubDate>
+      <guid>https://fordsupr.github.io/categories/ai-agent/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Python</title>
       <link>https://fordsupr.github.io/categories/python/</link>
-      <pubDate>Tue, 21 Jan 2025 12:10:00 +0800</pubDate>
+      <pubDate>Sat, 25 Jan 2025 12:10:00 +0800</pubDate>
       <guid>https://fordsupr.github.io/categories/python/</guid>
       <description></description>
     </item>
     <item>
       <title>RPA</title>
       <link>https://fordsupr.github.io/categories/rpa/</link>
-      <pubDate>Tue, 21 Jan 2025 12:10:00 +0800</pubDate>
+      <pubDate>Sat, 25 Jan 2025 12:10:00 +0800</pubDate>
       <guid>https://fordsupr.github.io/categories/rpa/</guid>
       <description></description>
     </item>
