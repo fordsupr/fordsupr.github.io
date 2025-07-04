@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AI LLM RAG AGI on Jason Li | 原來如此!So that’s why! </title>
-    <link>https://fordsupr.github.io/categories/ai-llm-rag-agi/</link>
+    <link>http://localhost:1313/categories/ai-llm-rag-agi/</link>
     <description>Recent content in AI LLM RAG AGI on Jason Li | 原來如此!So that’s why! </description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
     <lastBuildDate>Mon, 11 Mar 2024 02:07:47 +0800</lastBuildDate>
-    <atom:link href="https://fordsupr.github.io/categories/ai-llm-rag-agi/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/ai-llm-rag-agi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Build a LLM RAG that can answer local files.</title>
-      <link>https://fordsupr.github.io/blog/llamaqa/</link>
+      <link>http://localhost:1313/blog/llamaqa/</link>
       <pubDate>Mon, 11 Mar 2024 02:07:47 +0800</pubDate>
-      <guid>https://fordsupr.github.io/blog/llamaqa/</guid>
+      <guid>http://localhost:1313/blog/llamaqa/</guid>
       <description>&lt;p&gt;公司希望對A.I.除了智慧製造專案外，能有其他方面的應用或是題目。&#xA;當然一開始是滿頭問號??節省人力，不是已經有RPA?&#xA;智慧製造也在嘗試&amp;quot;瑕疵檢測&amp;quot;方面的嘗試，怎麼生出其他A.I.題目?&lt;/p&gt;&#xA;&lt;p&gt;基於2023.8我有篇文章&amp;quot;Build a Q&amp;amp;A bot that can answer local files.&amp;quot;&lt;/p&gt;</description>
     </item>
   </channel>
