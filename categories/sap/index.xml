@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SAP on Jason Li | 原來如此!So that’s why! </title>
-    <link>http://localhost:1313/categories/sap/</link>
+    <link>https://fordsupr.github.io/categories/sap/</link>
     <description>Recent content in SAP on Jason Li | 原來如此!So that’s why! </description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
     <lastBuildDate>Fri, 29 Jul 2022 02:07:47 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/sap/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://fordsupr.github.io/categories/sap/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RFC_READ_TABLE Buffer Exceeded</title>
-      <link>http://localhost:1313/blog/pyrfc_over512/</link>
+      <link>https://fordsupr.github.io/blog/pyrfc_over512/</link>
       <pubDate>Fri, 29 Jul 2022 02:07:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/pyrfc_over512/</guid>
+      <guid>https://fordsupr.github.io/blog/pyrfc_over512/</guid>
       <description>&lt;ul&gt;&#xA;&lt;li&gt;via Function RFC_READ_TABLE but always getting a Data Buffer Exceeded Exception.&lt;/li&gt;&#xA;&lt;li&gt;Why?&#xA;&lt;ul&gt;&#xA;&lt;li&gt;1.Function Module RFC_READ_TABLE also limits if read exceeds 512 bytes per row of data&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;How to fix it?&#xA;&lt;ul&gt;&#xA;&lt;li&gt;1.split query : getDF1,getDF2,getDF3&lt;/li&gt;&#xA;&lt;li&gt;2.merge dataframe&lt;/li&gt;&#xA;&lt;li&gt;3.insert sql&amp;ndash;&amp;gt; done.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;附上貼圖說明,&lt;/p&gt;</description>
     </item>
     <item>
       <title>python rfc Connector</title>
-      <link>http://localhost:1313/blog/pyrfc/</link>
+      <link>https://fordsupr.github.io/blog/pyrfc/</link>
       <pubDate>Mon, 27 Jun 2022 02:06:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/pyrfc/</guid>
+      <guid>https://fordsupr.github.io/blog/pyrfc/</guid>
       <description>&lt;ul&gt;&#xA;&lt;li&gt;RFC SDK : ref &amp;ndash;&amp;gt;https://sap.github.io/PyRFC/index.html&lt;/li&gt;&#xA;&lt;li&gt;pyrfc  : 請安裝 &amp;ndash;&amp;gt;pip install pyrfc&lt;/li&gt;&#xA;&lt;li&gt;注意事項 :&#xA;&lt;ul&gt;&#xA;&lt;li&gt;1.python 建議使用 3.8+&lt;/li&gt;&#xA;&lt;li&gt;2.pyrfc = 2.5 , 對應 rfc SDK =  NW RFC Library: SDK variant, Release 750 Patch Level 9, Compiled on Dec 11 2021 01:53:21&lt;/li&gt;&#xA;&lt;li&gt;3.At last : copy sapnwrfc.dll to System32&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;附上貼圖說明,&lt;/p&gt;</description>
     </item>
     <item>
       <title>嗯~來架設一台SAP吧!</title>
-      <link>http://localhost:1313/blog/sap_erp/</link>
+      <link>https://fordsupr.github.io/blog/sap_erp/</link>
       <pubDate>Wed, 03 Feb 2021 21:06:47 +0800</pubDate>
-      <guid>http://localhost:1313/blog/sap_erp/</guid>
+      <guid>https://fordsupr.github.io/blog/sap_erp/</guid>
       <description>&lt;ul&gt;&#xA;&lt;li&gt;目標 : 理想情況下，希望這台SAP(VM)可以供外部logon&lt;/li&gt;&#xA;&lt;li&gt;環境 : 本機Win 10 pro ; VM server 2008&lt;/li&gt;&#xA;&lt;li&gt;注意事項 :&#xA;&lt;ul&gt;&#xA;&lt;li&gt;1.使用NAT,VM8net網卡&lt;/li&gt;&#xA;&lt;li&gt;2.確認 Lan IP&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;我盡量附上貼圖說明,&lt;/p&gt;</description>
     </item>
   </channel>
