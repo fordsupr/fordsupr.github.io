@@ -6,8 +6,15 @@
     <description>Recent content in SAP on Jason Li | 原來如此!So that’s why! </description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 29 Jul 2022 02:07:47 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 15 Mar 2026 09:00:00 +0800</lastBuildDate>
     <atom:link href="https://fordsupr.github.io/categories/sap/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SAP透過MCP開立請購單POC概念驗證</title>
+      <link>https://fordsupr.github.io/blog/sapmcp202603/</link>
+      <pubDate>Sun, 15 Mar 2026 09:00:00 +0800</pubDate>
+      <guid>https://fordsupr.github.io/blog/sapmcp202603/</guid>
+      <description>&lt;h2 id=&#34;1-系統概述&#34;&gt;1. 系統概述&lt;/h2&gt;&#xA;&lt;h3 id=&#34;11-目標&#34;&gt;1.1 目標&lt;/h3&gt;&#xA;&lt;p&gt;將既有 Python 3.8 + pyrfc 的 SAP 請購單 FastAPI 服務，以 Python 3.11 + FastMCP 框架封裝為 &lt;strong&gt;MCP Server&lt;/strong&gt;，讓 Claude Desktop、Cherry Studio 等 MCP 客戶端能以自然語言呼叫 SAP 功能。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>RFC_READ_TABLE Buffer Exceeded</title>
       <link>https://fordsupr.github.io/blog/pyrfc_over512/</link>

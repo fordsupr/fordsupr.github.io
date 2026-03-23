@@ -6,13 +6,41 @@
     <description>Recent content in Tags on Jason Li | 原來如此!So that’s why! </description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 04 Jul 2025 12:10:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 15 Mar 2026 09:00:00 +0800</lastBuildDate>
     <atom:link href="https://fordsupr.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI Agent</title>
       <link>https://fordsupr.github.io/tags/ai-agent/</link>
-      <pubDate>Fri, 04 Jul 2025 12:10:00 +0800</pubDate>
+      <pubDate>Sun, 15 Mar 2026 09:00:00 +0800</pubDate>
       <guid>https://fordsupr.github.io/tags/ai-agent/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>FastMCP</title>
+      <link>https://fordsupr.github.io/tags/fastmcp/</link>
+      <pubDate>Sun, 15 Mar 2026 09:00:00 +0800</pubDate>
+      <guid>https://fordsupr.github.io/tags/fastmcp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MCP</title>
+      <link>https://fordsupr.github.io/tags/mcp/</link>
+      <pubDate>Sun, 15 Mar 2026 09:00:00 +0800</pubDate>
+      <guid>https://fordsupr.github.io/tags/mcp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://fordsupr.github.io/tags/python/</link>
+      <pubDate>Sun, 15 Mar 2026 09:00:00 +0800</pubDate>
+      <guid>https://fordsupr.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SAP</title>
+      <link>https://fordsupr.github.io/tags/sap/</link>
+      <pubDate>Sun, 15 Mar 2026 09:00:00 +0800</pubDate>
+      <guid>https://fordsupr.github.io/tags/sap/</guid>
       <description></description>
     </item>
     <item>
@@ -20,13 +48,6 @@
       <link>https://fordsupr.github.io/tags/n8n/</link>
       <pubDate>Fri, 04 Jul 2025 12:10:00 +0800</pubDate>
       <guid>https://fordsupr.github.io/tags/n8n/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Python</title>
-      <link>https://fordsupr.github.io/tags/python/</link>
-      <pubDate>Fri, 04 Jul 2025 12:10:00 +0800</pubDate>
-      <guid>https://fordsupr.github.io/tags/python/</guid>
       <description></description>
     </item>
     <item>
@@ -62,13 +83,6 @@
       <link>https://fordsupr.github.io/tags/machine-learning/</link>
       <pubDate>Tue, 22 Aug 2023 02:07:47 +0800</pubDate>
       <guid>https://fordsupr.github.io/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>SAP</title>
-      <link>https://fordsupr.github.io/tags/sap/</link>
-      <pubDate>Fri, 29 Jul 2022 02:07:47 +0800</pubDate>
-      <guid>https://fordsupr.github.io/tags/sap/</guid>
       <description></description>
     </item>
     <item>
