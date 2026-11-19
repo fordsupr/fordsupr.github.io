@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RAG on Jason Li | AI Agent × SAP</title>
+    <link>https://fordsupr.github.io/tags/rag/</link>
+    <description>Recent content in RAG on Jason Li | AI Agent × SAP</description>
+    <generator>Hugo</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Thu, 19 Nov 2026 12:00:00 +0800</lastBuildDate>
+    <atom:link href="https://fordsupr.github.io/tags/rag/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jason Li｜AI Agent × SAP 整合履歷</title>
+      <link>https://fordsupr.github.io/blog/resume/</link>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 +0800</pubDate>
+      <guid>https://fordsupr.github.io/blog/resume/</guid>
+      <description>以 SAP FI／AM 與跨系統整合經驗為基礎，實作 MCP 請購單 POC、SAP RFC 網關整合、企業 RAG 與流程自動化。</description>
+    </item>
+    <item>
+      <title>從 SAP 自動化到 AI Agent：2021–2025 實作摘要</title>
+      <link>https://fordsupr.github.io/blog/ai-agent-sap-journey-2021-2025/</link>
+      <pubDate>Wed, 31 Dec 2025 12:00:00 +0800</pubDate>
+      <guid>https://fordsupr.github.io/blog/ai-agent-sap-journey-2021-2025/</guid>
+      <description>從 SAP／MES 自動化、Python RFC 與企業文件問答，到 n8n＋UiPath 任務編排，整理 2021–2025 年的實作成果與設計心得。</description>
+    </item>
+  </channel>
+</rss>

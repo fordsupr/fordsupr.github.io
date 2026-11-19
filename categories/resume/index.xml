@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Resume on Jason Li | 原來如此!So that’s why! </title>
+    <title>Resume on Jason Li | AI Agent × SAP</title>
     <link>https://fordsupr.github.io/categories/resume/</link>
-    <description>Recent content in Resume on Jason Li | 原來如此!So that’s why! </description>
+    <description>Recent content in Resume on Jason Li | AI Agent × SAP</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Mon, 11 Sep 2023 02:07:47 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 00:00:00 +0800</lastBuildDate>
     <atom:link href="https://fordsupr.github.io/categories/resume/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Resume / About me</title>
+      <title>Jason Li｜AI Agent × SAP 整合履歷</title>
       <link>https://fordsupr.github.io/blog/resume/</link>
-      <pubDate>Mon, 11 Sep 2023 02:07:47 +0800</pubDate>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 +0800</pubDate>
       <guid>https://fordsupr.github.io/blog/resume/</guid>
-      <description>&lt;h2 id=&#34;career-objective&#34;&gt;Career objective&lt;/h2&gt;&#xA;&lt;p&gt;Clear logic, empathy ability, simplify complex process.&#xA;Work attitude is correct, responsible, able to stand in the position of the team and the company, and make the best contribution!&#xA;Freelancer job nature is also available.&lt;/p&gt;</description>
+      <description>以 SAP FI／AM 與跨系統整合經驗為基礎，實作 MCP 請購單 POC、SAP RFC 網關整合、企業 RAG 與流程自動化。</description>
     </item>
   </channel>
 </rss>

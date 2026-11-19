@@ -1,19 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>MCP on Jason Li | 原來如此!So that’s why! </title>
+    <title>MCP on Jason Li | AI Agent × SAP</title>
     <link>https://fordsupr.github.io/tags/mcp/</link>
-    <description>Recent content in MCP on Jason Li | 原來如此!So that’s why! </description>
+    <description>Recent content in MCP on Jason Li | AI Agent × SAP</description>
     <generator>Hugo</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Sun, 15 Mar 2026 09:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 12:00:00 +0800</lastBuildDate>
     <atom:link href="https://fordsupr.github.io/tags/mcp/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>SAP透過MCP開立請購單POC概念驗證</title>
+      <title>Jason Li｜AI Agent × SAP 整合履歷</title>
+      <link>https://fordsupr.github.io/blog/resume/</link>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 +0800</pubDate>
+      <guid>https://fordsupr.github.io/blog/resume/</guid>
+      <description>以 SAP FI／AM 與跨系統整合經驗為基礎，實作 MCP 請購單 POC、SAP RFC 網關整合、企業 RAG 與流程自動化。</description>
+    </item>
+    <item>
+      <title>AI Agent＋SAP：從 MCP 請購單到 RFC 網關整合</title>
+      <link>https://fordsupr.github.io/blog/sapagent202611/</link>
+      <pubDate>Wed, 18 Nov 2026 12:00:00 +0800</pubDate>
+      <guid>https://fordsupr.github.io/blog/sapagent202611/</guid>
+      <description>完成 SAP RFC 與開源網關整合驗證，探索業務函數及 DDIC 欄位，並處理舊版 RFC_READ_TABLE 相容性，建立 Agent 工具整合基礎。</description>
+    </item>
+    <item>
+      <title>SAP MCP 請購單 POC：把業務需求串成工具流程</title>
       <link>https://fordsupr.github.io/blog/sapmcp202603/</link>
       <pubDate>Sun, 15 Mar 2026 09:00:00 +0800</pubDate>
       <guid>https://fordsupr.github.io/blog/sapmcp202603/</guid>
-      <description>&lt;h2 id=&#34;1-系統概述&#34;&gt;1. 系統概述&lt;/h2&gt;&#xA;&lt;h3 id=&#34;11-目標&#34;&gt;1.1 目標&lt;/h3&gt;&#xA;&lt;p&gt;將既有 Python 3.8 + pyrfc 的 SAP 請購單 FastAPI 服務，以 Python 3.11 + FastMCP 框架封裝為 &lt;strong&gt;MCP Server&lt;/strong&gt;，讓 Claude Desktop、Cherry Studio 等 MCP 客戶端能以自然語言呼叫 SAP 功能。&lt;/p&gt;</description>
+      <description>將既有 FastAPI／PyRFC 請購單服務封裝為 MCP 工具，讓客戶端串接申請人、主檔與歷史資料，再提交 SAP 請購需求。</description>
     </item>
   </channel>
 </rss>

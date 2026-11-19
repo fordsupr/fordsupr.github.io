@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RFC on Jason Li | AI Agent × SAP</title>
+    <link>https://fordsupr.github.io/tags/rfc/</link>
+    <description>Recent content in RFC on Jason Li | AI Agent × SAP</description>
+    <generator>Hugo</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Thu, 19 Nov 2026 12:00:00 +0800</lastBuildDate>
+    <atom:link href="https://fordsupr.github.io/tags/rfc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Agent＋SAP：從 MCP 請購單到 RFC 網關整合</title>
+      <link>https://fordsupr.github.io/blog/sapagent202611/</link>
+      <pubDate>Wed, 18 Nov 2026 12:00:00 +0800</pubDate>
+      <guid>https://fordsupr.github.io/blog/sapagent202611/</guid>
+      <description>完成 SAP RFC 與開源網關整合驗證，探索業務函數及 DDIC 欄位，並處理舊版 RFC_READ_TABLE 相容性，建立 Agent 工具整合基礎。</description>
+    </item>
+  </channel>
+</rss>

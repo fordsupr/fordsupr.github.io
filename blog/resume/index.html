@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh-tw"><head>
   <meta charset="utf-8">
-  <title>Jason Li | 原來如此!So that’s why! </title>
+  <title>Jason Li | AI Agent × SAP</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Resume / About me">
+  <meta name="description" content="20 年以上企業系統與 SAP 經驗，聚焦 AI Agent、MCP 工具整合、RFC／BAPI 與企業流程自動化。">
   <meta name="author" content="Jason Li">
   <meta name="generator" content="Hugo 0.141.0">
 
@@ -58,7 +58,7 @@
     
     <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
       <a class="navbar-brand mobile-view" href="https://fordsupr.github.io/"><img class="img-fluid"
-          src="https://fordsupr.github.io/images/logo1.png" alt="Jason Li | 原來如此!So that’s why! "></a>
+          src="https://fordsupr.github.io/images/logo1.png" alt="Jason Li | AI Agent × SAP"></a>
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
         <i class="ti-menu h3"></i>
       </button>
@@ -79,7 +79,7 @@
         </div>
 
         <a class="navbar-brand mx-auto desktop-view" href="https://fordsupr.github.io/"><img class="img-fluid"
-            src="https://fordsupr.github.io/images/logo1.png" alt="Jason Li | 原來如此!So that’s why! "></a>
+            src="https://fordsupr.github.io/images/logo1.png" alt="Jason Li | AI Agent × SAP"></a>
 
         <ul class="navbar-nav">
           
@@ -125,159 +125,80 @@
         <a href="/categories/resume"
           class="text-primary">Resume</a>
         
-        <h2>Resume / About me</h2>
+        <h2>Jason Li｜AI Agent × SAP 整合履歷</h2>
         <div class="mb-4 post-meta">
           <span>By Jason Li</span>
-          
-          <span class="border-bottom border-primary px-2 mx-1"></span>
-          <span>11 September 2023</span>
           
         </div>
         
         <div class="content mb-5">
-          <h2 id="career-objective">Career objective</h2>
-<p>Clear logic, empathy ability, simplify complex process.
-Work attitude is correct, responsible, able to stand in the position of the team and the company, and make the best contribution!
-Freelancer job nature is also available.</p>
-<p>Suggestions for what works best for me:</p>
-<ol>
-<li>Creation of Dataflow for each SAP module</li>
-<li>Create special models through Machine Learning</li>
-<li>Combining the above, establish RPA robot process automation, Ex: virtual purchasing department staff scheduling/review automatically create purchase orders.</li>
-</ol>
-<h2 id="professional-summary">Professional Summary</h2>
+          <h2 id="專業定位">專業定位</h2>
+<p><strong>AI Agent／SAP Integration Engineer</strong>。具 20 年以上企業系統與 SAP 相關經驗，專長為 FI／AM、ABAP 及跨系統整合，近年聚焦 MCP 工具、RFC／BAPI、企業 RAG 與自動化工作流程。</p>
+<p>能將業務需求拆成可執行的流程，串接主檔查詢、文件檢索與 SAP 操作，並以連線驗證、欄位語意及異常處理支撐交付。目標角色為企業 AI Agent 應用開發、SAP 智慧自動化及系統整合；可承接專案合作。</p>
+<h2 id="代表專案">代表專案</h2>
+<h3 id="sap-rfc-網關與-agent-整合基礎202611">SAP RFC 網關與 Agent 整合基礎｜2026/11</h3>
 <ul>
-<li>•	A seasoned IT professional with over 25 years of experience in the financial industry.</li>
-<li>• A.I. experience(RAG,AGI)with over 1 year</li>
-<li>•	Expertise in SAP FI/AM, RPA, and machine learning.</li>
-<li>•	Proven ability to lead and deliver complex projects, including IFRS implementation, e-commerce, and electronic invoicing.</li>
-<li>•	Strong communication and teamwork skills.</li>
+<li>建立 sapFDE 整合環境，以 uv 管理 Python 3.11、PyRFC 與 SAP SDK 載入設定。</li>
+<li>整合開源 sap-for-agents v0.19.0，建立安裝、啟動及驗證 launcher；完成 RFC 登入、ping、網關就緒與呼叫回傳驗證。</li>
+<li>探索指定範圍內 603 筆 RFC／BAPI 與 55 個自訂透明表，取得訂單交接表欄位定義及資料樣本。</li>
+<li>診斷舊 SAP 缺少 RFC_READ_TABLE 參數的相容性問題，改用通用 RFC 介面成功查詢。</li>
 </ul>
-<h2 id="employment-history">Employment history</h2>
-<h4 id="mar2021-till-now">Mar.2021-Till Now</h4>
+<p>成果為整合與查詢驗證；網關核心來自開源專案，自動相容降級及業務寫入流程仍待開發／驗證。<a href="https://fordsupr.github.io/blog/sapagent202611/">專案成果</a></p>
+<h3 id="sap-mcp-請購單-poc202603">SAP MCP 請購單 POC｜2026/03</h3>
 <ul>
-<li>
-<p>KINIK COMPANY</p>
+<li>以 FastMCP 封裝既有 FastAPI／PyRFC 服務，設計自然語言串接 SAP 請購單的工具流程。</li>
+<li>串接申請人、歷史請購單、成本中心、採購組與物料群組查詢，支援依歷史範例、逐欄補齊或結構化資料建立請購單的情境。</li>
+<li>分離 MCP 與 SAP 連線環境，保留既有 API 契約；專案維持概念驗證定位。</li>
+</ul>
+<p><a href="https://fordsupr.github.io/blog/sapmcp202603/">POC 說明</a></p>
+<h3 id="企業-rag-與-sapmes-自動化20212025">企業 RAG 與 SAP／MES 自動化｜2021–2025</h3>
 <ul>
-<li>
-<p>A.I. experience</p>
-<ul>
-<li>• Practice how to implement RAG（Representation, Attention, Generation） and AGI（Artificial General Intelligence） into the production environment</li>
-<li>• Implementation:
-<ul>
-<li>• Server:Private GPT/API Server</li>
-<li>• Client:Stremlit/Python</li>
-<li>• Security:NeMo Guardrails</li>
+<li>實作 CSV 語意檢索與 PrivateGPT API 文件問答，累積內部部署、來源引用及 API 串接經驗。</li>
+<li>結合 UiPath、Python 與 OCR 完成 SAP 訂單、寄銷數據更新及清帳相關機器人；以 n8n 探索任務編排。</li>
+<li>依使用單位專案簡報：MES 交期預估每人每月節省 11 小時、ISO 文管每人每月節省 6 小時；A、B 廠生產排程各每日節省 125 分鐘。</li>
 </ul>
-</li>
-</ul>
-</li>
-<li>
-<p>RPA experience</p>
-<ul>
-<li>•	Familiar with low-code software: iRPA, Automate, UiPath</li>
-<li>•	Through open source packages, highly customized RPA projects</li>
-<li>•	Currently assisted MES, business, and HR in over 5 projects, achieving the goals of saving time and improving efficiency</li>
-<li>•	Most valuable and practical solution: RPA + SAP, improving the efficiency of End Users in each module</li>
-</ul>
-</li>
-<li>
-<p>SAP/HANA/FI experience
-* •	ABAP report development
-* •	SCM system integration, focusing on payment module
-* •	BPM approval system development, focusing on expense claim module</p>
-</li>
-<li>
-<p>Smart manufacturing project</p>
-<ul>
-<li>•	Cooperated with National Tsing Hua University to introduce a specification recommendation system, mainly using XGBoost and Random Forest</li>
-<li>•	Use ML to build dedicated models for each SAP module and intelligent RPA to create transaction documents</li>
-</ul>
-</li>
-<li>
-<p>Future direction</p>
-<ul>
-<li>•	Use ML to build dedicated models for each SAP module and intelligent RPA to create transaction documents</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h4 id="aug2019-nov2020">Aug.2019-Nov.2020</h4>
-<ul>
-<li>
-<p>EXCELLENCE OPTO.INC., LTD.</p>
-<ul>
-<li>
-<p>Working as an SAP FICO AM Functional support</p>
-<ul>
-<li>•	Roll-out with SAP Team Member / Subsidiary/ FI CO AM Functional support: USA, German, Spain, CN.</li>
-<li>•	Key user training.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h4 id="mar2019-jul-2019">Mar.2019-Jul. 2019</h4>
-<ul>
-<li>
-<p>Landseed International Hospital, LTD.</p>
-<ul>
-<li>
-<p>Working as an SAP FICO MM Functional support</p>
-<ul>
-<li>•	Medical supplies/warehouse management: Intermediate MM Module.</li>
-<li>•	After four months of hard work, I was the only one.It is a pity that the manpower is insufficient.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h4 id="jan2006-mar2019">Jan.2006-Mar.2019</h4>
-<ul>
-<li>
-<p>CHUNGHWA PICTURE TUBES, LTD.</p>
-<ul>
-<li>
-<p>Working as an SAP FI AM Functional support</p>
-<ul>
-<li>•	E-commerce: Familiar with Java architecture + Web base, suppliers query SAP/PO instantly. Effectively reduce the number of purchaser staff working time through the web app.</li>
-<li>•	SAP Budget, Expense Web Query for staff: Use the JS framework, Interface, and logic independently to provide services in API mode. Effectively reduce FI staff working time.</li>
-<li>•	2018 Cooperate with the Ministry of Finance to smoothly introduce the electronic invoice System, decreased carbon footprint.</li>
-<li>•	Custody Operation System: Transfer expensed assets(have custody value) to SAP AM Module, and follow-up development can be combined with a signing system to protect the com’s assets.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>Thank CPT for letting me learn and manage the knowledge and management of the mature and stable information system.</p>
-<h4 id="sep2002-nov2004">Sep.2002-Nov.2004</h4>
-<ul>
-<li>
-<p>Century 21 ,LTD.</p>
-<ul>
-<li>
-<p>Worked as Java Developer</p>
-<ul>
-<li>•	Java, JSP</li>
-<li>•	Oracle</li>
-<li>•	Real Estate Management: Development of a website to the implemented Real Estate solution with Java
-Thanks to the headquarters for giving me experience in project introduction and management.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>Education</p>
-<p>Chung Yuan Christian University</p>
-<p>Completed 1999</p>
-<p>Master In Business management</p>
-<p>Hobbies and interests</p>
-<p>•	Web savvy</p>
-<p>•	Cooking</p>
-<p>•	Child care</p>
-<p>•	Reading Books</p>
-<p>&mdash;End &amp; Thank you!&mdash;</p>
+<p><a href="https://fordsupr.github.io/blog/ai-agent-sap-journey-2021-2025/">歷年實作摘要</a></p>
+<h2 id="核心能力">核心能力</h2>
+<table>
+  <thead>
+      <tr>
+          <th>領域</th>
+          <th>實作能力</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>AI Agent 整合</td>
+          <td>MCP／FastMCP、工具流程拆分、API 串接、n8n 任務編排</td>
+      </tr>
+      <tr>
+          <td>SAP</td>
+          <td>FI／AM、FICO 支援、ABAP 報表、RFC／BAPI、DDIC 欄位探索、SAP／MES／BPM 整合</td>
+      </tr>
+      <tr>
+          <td>企業 AI</td>
+          <td>RAG、PrivateGPT API、SentenceTransformer 語意檢索、OCR API</td>
+      </tr>
+      <tr>
+          <td>開發與自動化</td>
+          <td>Python、FastAPI、PyRFC、Polars／Parquet、UiPath、Java／JSP、Git、uv</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="工作經歷">工作經歷</h2>
+<p><strong>KINIK COMPANY｜2021/03–至今</strong><br>
+SAP／HANA／FI 支援與 ABAP 報表開發；串接 SCM 付款及 BPM 費用申請流程，推動 MES、業務與 HR 自動化。參與清大產學合作規格推薦系統，使用 XGBoost、Random Forest；近年延伸企業文件問答與 AI Agent＋SAP 整合實作。</p>
+<p><strong>EXCELLENCE OPTO. INC.｜2019/08–2020/11</strong><br>
+SAP FI／CO／AM 支援，參與美國、德國、西班牙及中國子公司 roll-out 與關鍵使用者訓練。</p>
+<p><strong>Landseed International Hospital｜2019/03–2019/07</strong><br>
+SAP FICO／MM 支援，涵蓋醫療物料與倉儲管理。</p>
+<p><strong>CHUNGHWA PICTURE TUBES｜2006/01–2019/03</strong><br>
+SAP FI／AM 支援；開發供應商採購查詢、預算／費用 Web API 與資產保管系統，參與 2018 年電子發票導入，累積財務、採購及資產流程整合經驗。</p>
+<p><strong>Century 21｜2002/09–2004/11</strong><br>
+Java／JSP、Oracle 與房地產管理網站開發。</p>
+<h2 id="學歷與聯絡">學歷與聯絡</h2>
+<p>中原大學｜企業管理碩士，1999 年完成。</p>
+<p><a href="mailto:fordsupr@gmail.com">Email</a>｜<a href="https://github.com/fordsupr">GitHub</a>｜<a href="https://www.linkedin.com/in/jason-li-i3bigdata">LinkedIn</a></p>
 
         </div>
 
@@ -294,7 +215,7 @@ Thanks to the headquarters for giving me experience in project introduction and 
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 text-center mb-5">
-        <a href="https://fordsupr.github.io/"><img src="https://fordsupr.github.io/images/logo1.png" alt="Jason Li | 原來如此!So that’s why! "></a>
+        <a href="https://fordsupr.github.io/"><img src="https://fordsupr.github.io/images/logo1.png" alt="Jason Li | AI Agent × SAP"></a>
       </div>
                
       <div class="col-lg-3 col-sm-6 mb-5">
@@ -332,34 +253,10 @@ Thanks to the headquarters for giving me experience in project introduction and 
               href="/categories/ai-agent">Ai agent</a>
           </li>
           <li class="mb-3"><a class="text-dark"
-              href="/categories/ai-llm-rag-agi">Ai llm rag agi</a>
-          </li>
-          <li class="mb-3"><a class="text-dark"
-              href="/categories/java">Java</a>
-          </li>
-          <li class="mb-3"><a class="text-dark"
-              href="/categories/machine-learning">Machine learning</a>
-          </li>
-          <li class="mb-3"><a class="text-dark"
-              href="/categories/mcp">Mcp</a>
-          </li>
-          <li class="mb-3"><a class="text-dark"
-              href="/categories/n8n">N8n</a>
-          </li>
-          <li class="mb-3"><a class="text-dark"
-              href="/categories/python">Python</a>
-          </li>
-          <li class="mb-3"><a class="text-dark"
               href="/categories/resume">Resume</a>
           </li>
           <li class="mb-3"><a class="text-dark"
-              href="/categories/rpa">Rpa</a>
-          </li>
-          <li class="mb-3"><a class="text-dark"
               href="/categories/sap">Sap</a>
-          </li>
-          <li class="mb-3"><a class="text-dark"
-              href="/categories/uipath">Uipath</a>
           </li>
         </ul>
       </div>
