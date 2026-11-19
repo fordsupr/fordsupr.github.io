@@ -5,7 +5,7 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="SAP 整合最新實測成果：RFC 連線、網關整合、函數探索及舊版資料查詢相容性。">
+  <meta name="description" content="透過 SAP 官方 SDK、SAP AI Gateway 與 Claude／Codex，以自然語言探索 RFC、ZTABLE 與 SAP 資料。">
   <meta name="author" content="Jason Li">
   <meta name="generator" content="Hugo 0.141.0">
 
@@ -148,9 +148,21 @@
 <li><strong>欄位與資料理解</strong>：取得一張訂單交接表的 12 個欄位、DDIC 說明及複合主鍵，完成 100 筆樣本讀取與本機匯出。</li>
 </ul>
 <p>我的成果集中在環境建置、網關整合、驗證與 SAP 查詢。目錄搜尋的 603 筆是指定範圍結果，100 筆樣本未指定排序，皆不能視為全系統盤點或最新資料。</p>
-<h2 id="相容性處理依-sap-實際介面調整">相容性處理：依 SAP 實際介面調整</h2>
-<p>現有 SAP 的 <code>RFC_READ_TABLE</code> 缺少網關 <code>/api/table/read</code> 使用的 <code>USE_ET_DATA_4_RETURN</code> 參數，實測出現 <code>RFC_INVALID_PARAMETER</code>。</p>
-<p>成功的做法是改由 <code>/api/rfc</code> 呼叫傳統 <code>RFC_READ_TABLE</code>，指定 <code>FIELDS</code>、<code>OPTIONS</code>，從 <code>DATA.WA</code> 讀取資料，並控制欄位總寬度與分隔符。這次完成了可用的查詢方式；網關的自動相容降級仍待開發。</p>
+<h2 id="用自然語言打開-sap-查詢與整合">用自然語言打開 SAP 查詢與整合</h2>
+<p>SAP 主機可能部署在 Unix／Linux 等伺服器環境。從 Windows 串接 SAP，往往需要處理專用介面、連線設定與權限，對一般使用者或剛接手的 IT 人員都有門檻。</p>
+<p>這套架構結合 <strong>SAP 官方 SDK、SAP AI Gateway，以及 Claude 或 Codex</strong>，讓自然語言需求透過網關轉成 SAP 查詢：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>使用者 → Claude／Codex → SAP AI Gateway → SAP 官方 SDK → SAP
+</span></span></code></pre></div><p>最大的好處，是讓不同角色都能更容易理解與使用 SAP：</p>
+<ul>
+<li><strong>一般使用者／新人</strong>：用人類的自然語言進行 SAP 查詢，降低學習交易碼與查詢介面的負擔。可透過既有授權與權限規劃提供查詢服務；是否需要額外帳號或費用，仍依 SAP 授權條款確認。</li>
+<li><strong>進階 IT 人員</strong>：探索可用的 RFC、檢視自訂 ZTABLE 的結構與資料，掌握外接系統整合所需的介面與資料依據，減少接手時摸索的時間。</li>
+<li><strong>SAP 開發人員</strong>：用自然語言輔助查找函數、欄位與資料，減少反覆切換、輸入 t-code 的負擔。每天敲交易碼的心累，終於有機會少一點！</li>
+</ul>
+<h2 id="操作示範自然語言查詢-rfc-與-ztable">操作示範：自然語言查詢 RFC 與 ZTABLE</h2>
+<video controls playsinline preload="metadata" style="display:block;width:100%;height:auto;">
+  <source src="/videos/sapAIquery_rfcZtable_mosaic_center_speed15_endtitle.mp4" type="video/mp4">
+  您的瀏覽器不支援影片播放，請<a href="/videos/sapAIquery_rfcZtable_mosaic_center_speed15_endtitle.mp4">開啟示範影片</a>。
+</video>
 <h2 id="下一步從工具可用走向業務可交付">下一步：從工具可用走向業務可交付</h2>
 <p>本次驗證建立了 Agent 探索 SAP 與讀取資料的基礎。請購單建立及修改未在這次測試中執行；原有 PR API 當次尚未啟動，其健康檢查仍待重跑。</p>
 <p>後續將優先處理舊版介面相容、業務欄位及狀態碼確認，再驗證寫入流程的授權、核准、交易回傳與重複執行控制。通用 RFC 網關的 <code>/api/rfc</code> 與既有 PR API 的 <code>/pr/create</code> 是不同契約，串接前必須明確對應。</p>
