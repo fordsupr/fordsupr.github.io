@@ -49,7 +49,29 @@ try {
     await copyFile(path.join(source, relative), target)
   }
   await writeFile(destination(".nojekyll"), "")
-  git(["add", "-A"], temporary)
+  // Stage Quartz's lowercase paths exactly, even on Windows.
+  git(["-c", "core.ignorecase=false", "-c", "core.autocrlf=false", "add", "-A"], temporary)
+  // Git trees can preserve both asset spellings even when the local filesystem cannot.
+  for (const folder of ["images", "videos"]) {
+    const assets = await collect(path.resolve("content", folder), folder)
+    for (const relative of assets) {
+      const original = path.resolve("content", relative)
+      const blob = git(["hash-object", "-w", original], temporary, true).trim()
+      git(
+        [
+          "-c",
+          "core.ignorecase=false",
+          "update-index",
+          "--add",
+          "--cacheinfo",
+          "100644",
+          blob,
+          relative,
+        ],
+        temporary,
+      )
+    }
+  }
   const difference = spawnSync("git", ["diff", "--cached", "--quiet"], { cwd: temporary })
   if (difference.status === 0) {
     console.log("Published files are already current.")
@@ -61,5 +83,14 @@ try {
     throw new Error("Unable to inspect staged deployment")
   }
 } finally {
-  if (checkoutReady) git(["worktree", "remove", temporary])
+  if (checkoutReady) {
+    if (
+      path.dirname(temporary) !== path.resolve(tmpdir()) ||
+      !path.basename(temporary).startsWith("fordsupr-quartz-pages-")
+    ) {
+      throw new Error("Invalid publish checkout cleanup path")
+    }
+    // This isolated, generated checkout may contain case-only aliases that Windows cannot represent.
+    git(["worktree", "remove", "--force", temporary])
+  }
 }
