@@ -31,6 +31,8 @@ node scripts/verify-site.mjs
 
 文章以標準 Markdown 連結，影片使用 Quartz 官方支援的 Markdown 嵌入。舊 `/blog/.../`、`/about/` 與 `/search/` 網址透過官方 AliasRedirects 插件保留；aliases 同時列出無尾斜線與 `/index` 形式，支援 GitHub Pages 舊目錄式網址。
 
+`quartz.ts` 設定 Explorer 排序，讓左側實作筆記與首頁一致：SAP AI Gateway、SAP MCP 請購單 POC、2021–2025 實作摘要。
+
 `scripts/preserve-asset-urls.mjs` 在建置後補留原始圖片／影片路徑，避免 Quartz 小寫化資源網址後，既有連結失效。
 
 ## GitHub Pages 部署
