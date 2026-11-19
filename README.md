@@ -2,7 +2,7 @@
 
 網站：https://fordsupr.github.io/
 
-使用 [Quartz](https://github.com/jackyzha0/quartz) **v5.1.0** 的官方 **Default** 模板，保留官方 CSS、頁面框架、搜尋、導覽、圖譜與深色模式。站名、語系、網址及聯絡連結在 `quartz.config.yaml` 設定；沒有自訂 CSS 或 HTML 模板。
+使用 [Quartz](https://github.com/jackyzha0/quartz) **v5.1.0** 的官方 **Default** 模板，保留官方頁面框架、搜尋、導覽、圖譜與深色模式。站名、語系、網址及聯絡連結在 `quartz.config.yaml` 設定。`quartz/styles/custom.scss` 僅調整桌面右側關係圖的上方間距及目錄可視高度，沒有自訂 HTML 模板。
 
 ## 開發與建置
 
@@ -52,6 +52,6 @@ npm run deploy
 
 2026-11-19 從 Hugo 遷移。先前 Hugo 原始碼與內容已保存在 `archive/hugo-2026-11-19/`；早期 13 篇原稿仍在 `archive/pre-2026/`。
 
-上游來源：`https://github.com/jackyzha0/quartz`，分支 `v5`，基準 commit `7cfb0796165c848be5438117e9806802123bf676`。官方框架與樣式保持原樣；MIT 授權保存在 `LICENSE.txt`。
+上游來源：`https://github.com/jackyzha0/quartz`，分支 `v5`，基準 commit `7cfb0796165c848be5438117e9806802123bf676`。官方框架保持原樣，版面調整集中在 `custom.scss`；MIT 授權保存在 `LICENSE.txt`。
 
 更新框架前，先比對上游發布紀錄，在本機完成建置與驗證後再推送。請保留站台內容、設定與部署腳本。

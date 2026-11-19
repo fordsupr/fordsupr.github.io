@@ -1,3 +1,28 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+@media all and ($desktop) {
+  #quartz-body > .sidebar.right {
+    padding-top: 1.5rem;
+  }
+
+  #quartz-body > .sidebar.right > .toc:has(> .toc-header:not(.collapsed)) {
+    flex-shrink: 0;
+
+    > .toc-content.overflow {
+      min-height: min(10rem, 24vh);
+      max-height: 32vh;
+      flex-shrink: 0;
+    }
+  }
+
+  #quartz-body > .sidebar.right > .backlinks {
+    display: flex;
+    flex: 1 1 0;
+    min-height: 0;
+
+    > ul.overflow {
+      flex: 1 1 auto;
+      min-height: 0;
+    }
+  }
+}
