@@ -5,7 +5,7 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="sapFDE 最新實測成果：SAP RFC 連線、開源網關整合、函數探索及舊版資料查詢相容性。">
+  <meta name="description" content="SAP 整合最新實測成果：RFC 連線、網關整合、函數探索及舊版資料查詢相容性。">
   <meta name="author" content="Jason Li">
   <meta name="generator" content="Hugo 0.141.0">
 
@@ -138,23 +138,23 @@
         </div>
         
         <div class="content mb-5">
-          <p>AI Agent 要處理 SAP 業務，需要能找到適合的函數、理解欄位，並取得可驗證的執行結果。2026 年的工作從 <a href="https://fordsupr.github.io/blog/sapmcp202603/">MCP 請購單 POC</a>，延伸到 sapFDE 的通用 RFC 網關整合。</p>
+          <p>AI Agent 要處理 SAP 業務，需要能找到適合的函數、理解欄位，並取得可驗證的執行結果。2026 年的工作從 <a href="https://fordsupr.github.io/blog/sapmcp202603/">MCP 請購單 POC</a>，延伸到通用 RFC 網關整合。</p>
 <h2 id="已完成的整合與驗證">已完成的整合與驗證</h2>
 <p>截至 2026/11/18，完成以下實測工作：</p>
 <ul>
 <li><strong>連線基礎</strong>：以 uv 管理 Python 3.11、固定 PyRFC 版本及 SDK 載入設定；直接 SAP RFC 登入、ping 與 <code>STFC_CONNECTION</code> 回傳驗證通過。</li>
-<li><strong>開源網關整合</strong>：導入 <a href="https://github.com/Jack-Liang/sap-for-agents">Jack-Liang/sap-for-agents</a> <code>v0.19.0</code>，固定子模組版本、核對執行檔雜湊，建立安裝、啟動與驗證 launcher。<code>/health</code>、<code>/ready</code> 及通用 <code>/api/rfc</code> 驗證通過。</li>
+<li><strong>RFC 網關整合</strong>：建立安裝、啟動與驗證流程。<code>/health</code>、<code>/ready</code> 及通用 <code>/api/rfc</code> 驗證通過。</li>
 <li><strong>SAP 能力探索</strong>：在指定名稱範圍查得 603 筆 RFC／BAPI 目錄結果，確認包含請購與採購相關函數；查得 55 個符合條件的自訂透明表。</li>
 <li><strong>欄位與資料理解</strong>：取得一張訂單交接表的 12 個欄位、DDIC 說明及複合主鍵，完成 100 筆樣本讀取與本機匯出。</li>
 </ul>
-<p>我的成果集中在環境建置、網關整合、驗證與 SAP 查詢；網關核心由上述開源專案提供。目錄搜尋的 603 筆是指定範圍結果，100 筆樣本未指定排序，皆不能視為全系統盤點或最新資料。</p>
+<p>我的成果集中在環境建置、網關整合、驗證與 SAP 查詢。目錄搜尋的 603 筆是指定範圍結果，100 筆樣本未指定排序，皆不能視為全系統盤點或最新資料。</p>
 <h2 id="相容性處理依-sap-實際介面調整">相容性處理：依 SAP 實際介面調整</h2>
 <p>現有 SAP 的 <code>RFC_READ_TABLE</code> 缺少網關 <code>/api/table/read</code> 使用的 <code>USE_ET_DATA_4_RETURN</code> 參數，實測出現 <code>RFC_INVALID_PARAMETER</code>。</p>
 <p>成功的做法是改由 <code>/api/rfc</code> 呼叫傳統 <code>RFC_READ_TABLE</code>，指定 <code>FIELDS</code>、<code>OPTIONS</code>，從 <code>DATA.WA</code> 讀取資料，並控制欄位總寬度與分隔符。這次完成了可用的查詢方式；網關的自動相容降級仍待開發。</p>
 <h2 id="下一步從工具可用走向業務可交付">下一步：從工具可用走向業務可交付</h2>
 <p>本次驗證建立了 Agent 探索 SAP 與讀取資料的基礎。請購單建立及修改未在這次測試中執行；原有 PR API 當次尚未啟動，其健康檢查仍待重跑。</p>
 <p>後續將優先處理舊版介面相容、業務欄位及狀態碼確認，再驗證寫入流程的授權、核准、交易回傳與重複執行控制。通用 RFC 網關的 <code>/api/rfc</code> 與既有 PR API 的 <code>/pr/create</code> 是不同契約，串接前必須明確對應。</p>
-<p>本文依 sapFDE 的 <code>01工作摘要.md</code>（2026/11/18）、根目錄 README 與子專案操作文件整理，呈現當次驗證成果。</p>
+<p>本文依 2026/11/18 的實測工作紀錄整理，呈現當次驗證成果。</p>
 
         </div>
 

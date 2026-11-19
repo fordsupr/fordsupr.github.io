@@ -186,7 +186,7 @@
 <p>歷史範例可以減少填寫負擔；主檔代碼、日期、金額及缺漏欄位仍需依業務規則確認。工具串接也需要處理 BAPI 訊息、交易提交與失敗回傳，才能驗證整筆業務是否完成。</p>
 <h2 id="poc-定位與後續">POC 定位與後續</h2>
 <p>這篇記錄工具流程與架構設計，尚未提供完整生產驗收、成功率或節省工時數字。重點是將對話、資料查詢與 SAP 執行分層，讓既有 SAP API 能被 MCP 客戶端使用。</p>
-<p>2026 年 11 月進一步完成 <a href="https://fordsupr.github.io/blog/sapagent202611/">sapFDE RFC 網關整合驗證</a>。新的通用網關採 Python 3.11 整合環境，與本 POC 的既有 PR API 分開；兩者的端點契約不可直接互換。</p>
+<p>2026 年 11 月進一步完成 <a href="https://fordsupr.github.io/blog/sapagent202611/">SAP RFC 網關整合驗證</a>。新的通用網關採 Python 3.11 整合環境，與本 POC 的既有 PR API 分開；兩者的端點契約不可直接互換。</p>
 <p>PyRFC 及 SDK 設定需依實際環境版本處理。近期做法是固定套件版本並設定專案的 SDK DLL 載入路徑；相關背景見 <a href="https://fordsupr.github.io/blog/ai-agent-sap-journey-2021-2025/">歷年實作摘要</a>。</p>
 
         </div>

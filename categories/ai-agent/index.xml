@@ -13,7 +13,7 @@
       <link>https://fordsupr.github.io/blog/sapagent202611/</link>
       <pubDate>Wed, 18 Nov 2026 12:00:00 +0800</pubDate>
       <guid>https://fordsupr.github.io/blog/sapagent202611/</guid>
-      <description>完成 SAP RFC 與開源網關整合驗證，探索業務函數及 DDIC 欄位，並處理舊版 RFC_READ_TABLE 相容性，建立 Agent 工具整合基礎。</description>
+      <description>完成 SAP RFC 與網關整合驗證，探索業務函數及 DDIC 欄位，並處理舊版 RFC_READ_TABLE 相容性，建立 Agent 工具整合基礎。</description>
     </item>
     <item>
       <title>SAP MCP 請購單 POC：把業務需求串成工具流程</title>
